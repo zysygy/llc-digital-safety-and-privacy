@@ -133,31 +133,41 @@
 
       ![Bookshelf](framework/img/workshop/bookshelf.jpg)
 
-      A hacker will leverage any information they can find to understand their target.
+      A hacker will leverage any information they can find to help them break into a system.
       </script>
     </section>
 
     <section class="slide centered" data-markdown>
       <script type="text/template">
-      #  "What are behaviour patterns and weaknesses that I can exploit?"
+      #  "What are patterns and weaknesses that I can exploit?"
 
       ![Broken Chain](framework/img/workshop/broken_chain.jpg)
 
-      Hackers study trends in how people use computers and vulnerabilities in systems, just like a con artist.
+      Hackers study behaviours in people and vulnerabilities in systems, just like a con artist.
       </script>
     </section>
 
     <section class="slide" data-markdown>
       <script type="text/template">
-      #  Why do hackers hack?
+      # Why do hackers hack?
 
-      Hackers are sometimes caricatured as juvenile miscreants causing a bit of mischief. However, they are a threat that need to be taken seriously.
+      Hackers are sometimes portrayed as hooded figures causing a bit of mischief. However, they are a threat that need to be taken seriously.
 
       While some hackers hack for the challenge or to cause mayhem, many treat the activity as their **job**.
 
-      A hacker's ability to exploit and break into systems dictates their livelihood. Thus, they will use whatever resources available to achieve their goals.
+      A hacker's ability to exploit and break into systems is tied their livelihood. Thus, they will use whatever resources available to achieve their goals.
 
-      In some cases they are a part of well-funded criminal organizations or even nation states.
+      In some cases they are supported by well-funded criminal organizations or even nation states.
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+      # Security and Privacy VS Convenience
+
+      We must accept that there are always **trade-offs between security and covenience**. The more secure we want to be, the more we'll have to work to keep ourselves safe.
+
+      This workshop aims to explain both the risks and consequences of technology as well as the security measures we can take to protect ourselves. It is up to you to decide what level of security you are comfortable with.
       </script>
     </section>
 
@@ -179,7 +189,6 @@
       When making a password, conditions are usually enforced that complicate the process to try to make them more secure.
 
       With so many credentials to remember and cumbersome rules, people have developed bad habits and misconceptions of how to handle their passwords.
-
       </script>
     </section>
 
@@ -204,13 +213,13 @@
       <script type="text/template">
       #  Password Sharing
 
-      Even if you think you can trust someone (Can you really?), can you also trust them to never share it with someone else?
+      Even if you think you can trust someone (can you really?), can you also trust them to never share it with someone else?
 
       Some cases of compromised accounts are due to people carelessly sharing their passwords.
 
       <!-- .element: class="centered-media" -->![Whisper](framework/img/workshop/whisper.jpg)
 
-      It’s *impossible* for someone to accidentally (or purposefully) leak a password if they never know it! If you really must share a password out of convenience, be prepared to accept the risk.
+      It’s *impossible* for someone to accidentally (or purposefully) leak a password if they never know it. If you really must share a password, be prepared to accept the risk.
       </script>
     </section>
 
@@ -265,11 +274,11 @@
       </script>
     </section>
 
-    <section class="slide" data-markdown>
+    <section class="slide" data-markdown data-toc>
       <script type="text/template">
       #  Exercise: How strong is your password?
 
-      Suggest some passwords you might use for an account and let’s check them with some online tools
+      Suggest some passwords you might use for an account and we'll check them with some online tools
 
       <!-- .element: class="centered" -->**DO NOT offer any of your actual passwords!**
 
@@ -359,11 +368,11 @@
       * aaaaaac
       * and so on...
 
-      Some sites restrict the number of login attempts, but you can’t assume all of them do. Many hackers also use **offline attacks** which can bypass this safeguard.
+      Many sites restrict the number of login attempts, but you can’t assume all of them do. Many hackers also use **offline attacks** which can bypass this safeguard.
 
-      The topic of password security becomes more interesting and involves measures such as **hashes** with **salts**, but let's stick with the basic idea for now.
+      The full topic on password security involves measures such as **hashes** and **salting**, but for this workshop we'll stick with the basic ideas.
 
-      If you are interested, check out the bonus content at the end for more information about hashes.
+      If you are interested, check out the bonus content at the end for more information.
       </script>
     </section>
 
@@ -448,7 +457,7 @@
       <script type="text/template">
       # Withstanding Brute Force
 
-      Adding different types of characters doesn’t do as that much **making the password longer.**
+      Instead of adding different types of characters, it seems like all we need to do is **make passwords longer.**
 
       But is this enough? <!-- .element: class="delayed" -->
 
@@ -516,7 +525,7 @@
 
       Hackers can make dedicated cracking efforts against a specific individual or organization. The attacker researches their target and adds potentially relevant terms to their dictionary.
 
-      This research is also known as **doxxing**, which refers to looking up "docs" that are available on the Internet. Common sources include social media, chat logs, and data breaches.
+      This research is also known as **doxxing**, which refers to looking up "docs" that are available on the Internet. Common sources include social media, public records, and data breaches.
 
       <!-- .element: class="centered-media" --> ![Queen Elizabeth II](framework/img/workshop/queen.jpg)
 
@@ -556,7 +565,7 @@
 
       A person comes up with a strong Master Password to remember.
 
-      The master password is used to protect the Password Database, which stores all of the passwords for each account.
+      The manager helps generate and store secure passwords in a Password Database.
 
       The person installs the password manager onto their devices. They unlock the database with the master password and the password manager automatically fills in the right credentials when signing in.
 
@@ -605,7 +614,7 @@
 
       To be considered secure, it needs to be
 
-      * **Long** to resist raw brute force attacks (15+ characters is good)
+      * **Long** to resist raw brute force attacks (15+ characters)
       * **Unpredictable** to resist dictionary attacks
       * **Unrelated** to personal information to make it harder to research
       </script>
