@@ -397,13 +397,47 @@
       * aaaaaaa
       * aaaaaab
       * aaaaaac
+      * ...
+      * aaaaaaa1
+      * aaaaaaa2
       * and so on...
 
-      Many sites restrict the number of login attempts, but you can’t assume all of them do. Many hackers also use **offline attacks** which can bypass this safeguard.
+      Password security boils down to **delaying the inevitable**. A brute force will *eventually* check every password combination.
 
-      The full topic on password security involves measures such as **hashes** and **salting**, but for this workshop we'll stick with the basic ideas.
+      To understand our chances against brute force, let's look at **the number of possible password combinations** and speed that computers can guess passwords.
+      </script>
+    </section>
 
-      If you are interested, check out the bonus content at the end for more information.
+    <section class="slide" data-markdown>
+      <script type="text/template">
+      # Brute Force Combinations
+
+      Recall the rules from before:
+
+      > * Your password has to be at least 6 characters long
+      > * Must contain at least one lower case letter
+      > * one upper case letter
+      > * one digit
+      > * one symbol ~!@#$%^&*()_+
+
+      How many possible combinations could exist with these rules?
+
+      There are 26 upper and lower case letters, 10 digits, and 13 symbols meaning each character has a total of <!-- .element: class="delayed" -->**75** options.
+
+      Thus the password format looks like this<!-- .element: class="delayed" -->
+      ```
+          (75) (75) (75) (75) (75) (75)
+      ```
+      <!-- .element: class="delayed" -->
+
+      ```
+      eg. (s)  (3)  (c)  (R)  (e)  (t)
+      ```
+      <!-- .element: class="delayed" -->
+
+      In total, there are 75<sup>6</sup> total password combinations with these rules.
+
+      How quickly could a computer crack a password like this?<!-- .element: class="delayed" -->
       </script>
     </section>
 
@@ -412,6 +446,8 @@
       #  Brute Force: Speed
 
       Computers are way faster at performing calculations and repetitive tasks than humans are. How quickly do you think a single strong computer can guess passwords?
+
+      Some sites restrict the number of login attempts, but you can’t assume all of them do. Many hackers also use **offline attacks** which can bypass this safeguard.
 
         a) 10 guesses/minute<!-- .element: class="delayed" -->
 
@@ -427,37 +463,6 @@
 
         <!-- .element: class="delayed" -->**2 billion guesses per second!** A computer can do this 24 hours a day without stopping.
 
-      </script>
-    </section>
-
-    <section class="slide" data-markdown>
-      <script type="text/template">
-      # Brute Force Combinations
-
-      Recall the rules from before:<!-- .element: class="delayed" -->
-
-      > * Your password has to be at least 6 characters long
-      > * Must contain at least one lower case letter
-      > * one upper case letter
-      > * one digit
-      > * one symbol ~!@#$%^&*()_+
-
-      <!-- .element: class="delayed" -->
-
-      There are 26 upper and lower case letters, 10 digits, and 13 symbols meaning each character has a total of <!-- .element: class="delayed" -->**75** options.
-
-      A six character password could look like this<!-- .element: class="delayed" -->
-      ```
-          (75) (75) (75) (75) (75) (75)
-      ```
-      <!-- .element: class="delayed" -->
-
-      ```
-      eg. (s)  (3)  (c)  (R)  (e)  (t)
-      ```
-      <!-- .element: class="delayed" -->
-
-      How long would our fast computer need to crack a password like this?<!-- .element: class="delayed" -->
       </script>
     </section>
 
