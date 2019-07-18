@@ -46,7 +46,7 @@
       </div>
       <footer>
         <a class="left" rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" src="framework/img/cc-by-nc.png" /></a>
-        <p class="left">Content created by Allen C for <a prefix="cc: http://creativecommons.org/ns#" href="http://ladieslearningcode.com" property="cc:attributionName" rel="cc:attributionURL">Ladies Learning Code</a></p>
+        <p class="left">Content created by AC for <a prefix="cc: http://creativecommons.org/ns#" href="http://ladieslearningcode.com" property="cc:attributionName" rel="cc:attributionURL">Ladies Learning Code</a></p>
         <p class="right">Use the left <span class="arrow">&#8592;</span> and right <span class="arrow">&#8594;</span> arrow keys to navigate</p>
       </footer>
     </section>
@@ -70,7 +70,7 @@
       </div>
       <footer>
         <a class="left" rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" src="framework/img/cc-by-nc.png" /></a>
-        <p class="left">Content created by Allen C for <a prefix="cc: http://creativecommons.org/ns#" href="http://ladieslearningcode.com" property="cc:attributionName" rel="cc:attributionURL">Ladies Learning Code</a></p>
+        <p class="left">Content created by AC for <a prefix="cc: http://creativecommons.org/ns#" href="http://ladieslearningcode.com" property="cc:attributionName" rel="cc:attributionURL">Ladies Learning Code</a></p>
         <p class="right">Use the left <span class="arrow">&#8592;</span> and right <span class="arrow">&#8594;</span> arrow keys to navigate</p>
       </footer>
     </section>
@@ -308,17 +308,19 @@
       <script type="text/template">
       #  Exercise: How strong are your passwords? (10 mins)
 
-      **1.** On a sheet of paper, write down three passwords that you *might* use to sign up for an account or website. Make sure they are NOT actual passwords you've used on any of real accounts
+      **1.** On a new small sheet of paper, write down three passwords that you *might* use to sign up for an account or website. **Make sure they are NOT actual passwords you've used on any real accounts.**
 
-      <!-- .element: class="centered" -->**We really mean it, they should not be your real passwords!**
+      **2.** Once you've written down your sample passwords, let's check how they strong they are with a tool to that checks password strength
 
-      **2.** Once you've written down your not-real passwords, let's check how they strong they are with password strength checking tools.
+      **zxcvbn** - Open Source tool that checks advanced criteria. Harder to read, but much more detailed
 
-      **Tool 1 (Online)**: https://www.roboform.com/how-secure-is-my-password (Easier to use, but fewer details)
+      >In the workshop files, go into the **Password Checker** folder and then open **zxcvbn - Password Checker**
 
-      **Tool 2 (Offline)**: In the workshop files, go into the **Password Checker** folder and then open **zxcvbn - Password Checker** (Harder to read, but much more detailed)
+      **Roboform (zxcvbn)** - Online version of zxcvbn implemented by Roboform. Easier to read and use, but few details
 
-      **3.** Save your sheet of passwords for the next exercise. Make sure nothing but the passwords is on this paper
+      > Visit https://www.roboform.com/how-secure-is-my-password
+
+      **3.** Save your sheet of passwords for the next exercise. Do not write anything else on this paper.
 
       </script>
     </section>
@@ -326,25 +328,14 @@
     <section class="slide" data-markdown>
       <script type="text/template">
         #Password Strength Checkers
-        Password strength evaluations are only a baseline evaluation. In other words, you should assume passwords can be cracked in **at most** the time suggested by the tool, **but may take less**. Hacking methods are sophisticated and constantly improving.
 
-        If your password is listed as only taking a few minutes or seconds to crack, you should definitely consider changing it!
-      </script>
-    </section>
 
-    <section class="slide" data-markdown>
-      <script type="text/template">
-      #  Have you already been pwned?
 
-      Data breaches regularly expose lists of passwords for websites and services.
+        Password strength evaluations should be treated only as a baseline assessment.
 
-      Check if your accounts registered to an email have been exposed in a data breach by visiting the following website
+        In other words, the suggested strength or crack time is the maximum amount of time it would take to crack a password, **but it may take less time**. Hacking methods are sophisticated and constantly improving.
 
-      https://haveibeenpwned.com/
-
-      If you find that your account has been involved in a breach, it doesn't necessarily mean someone has broken into your account.
-
-      Password databases are usually protected by additional security measures, but it’s never guaranteed. It's good practice to change your passwords if they're exposed in a breach.
+        If your password is listed as "weak" or only taking a few minutes/seconds to crack, you should highly consider making a change!
       </script>
     </section>
 
@@ -581,7 +572,7 @@
       <script type="text/template">
       #Exercise: Match the passwords (10 minutes)
 
-      Let's rate how predictable our passwords are.
+      Let's find out how predictable our password are.
 
       **1.** Gather the profile and password sheets for each person in your group and scramble them.
 
@@ -1291,6 +1282,22 @@
       Eg. “BMO data breach”, “WhatsApp hacked”, “Netflix security flaw”
 
       Once the data is out, there is no telling who can access it what can be done with it.
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+      #  Have you already been pwned?
+
+      Data breaches regularly expose lists of passwords for websites and services.
+
+      Check if your accounts registered to an email have been exposed in a data breach by visiting the following website
+
+      https://haveibeenpwned.com/
+
+      If you find that your account has been involved in a breach, it doesn't necessarily mean someone has broken into your account.
+
+      Password databases are usually protected by additional security measures, but it’s never guaranteed. It's good practice to change your passwords if they're exposed in a breach.
       </script>
     </section>
 
