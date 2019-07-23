@@ -24,7 +24,7 @@
     <section class="slide welcome highlight">
       <h1><img class="logo-stacked" src="framework/img/llc-logo-stacked-white.png" alt="Ladies Learning Code logo">Welcome!</h1>
 
-      <div class="instructions">
+      <span class="instructions">
         <!-- ADD WIFI INFO HERE -->
         <h2>Get <br>Connected</h2>
         <p><strong>WiFi:</strong> wifi network</p>
@@ -43,7 +43,7 @@
           <li>Any Web Browser - FireFox is recommended: <a href="https://www.mozilla.org/en-CA/firefox/">https://www.mozilla.org/en-CA/firefox/</a></li>
           </li>
         </ol>
-      </div>
+      </span>
       <footer>
         <a class="left" rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" src="framework/img/cc-by-nc.png" /></a>
         <p class="left">Content created by AC for <a prefix="cc: http://creativecommons.org/ns#" href="http://ladieslearningcode.com" property="cc:attributionName" rel="cc:attributionURL">Ladies Learning Code</a></p>
@@ -65,9 +65,9 @@
         <li><a href="http://website.com">[website.com]</a></li>
         <li><a href="http://twitter.com/">[@twitter]</a></li>
       </ul>
-      <div class="sponsor">
+      <span class="sponsor">
         <p>In partnership with<br> <img src="framework/img/telus-logo-white.svg" alt="Telus"></p>
-      </div>
+      </span>
       <footer>
         <a class="left" rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" src="framework/img/cc-by-nc.png" /></a>
         <p class="left">Content created by AC for <a prefix="cc: http://creativecommons.org/ns#" href="http://ladieslearningcode.com" property="cc:attributionName" rel="cc:attributionURL">Ladies Learning Code</a></p>
@@ -80,7 +80,7 @@
       <script type="text/template">
         # Course Outline
 
-        <div class="table-of-contents"></div>
+        <span class="table-of-contents"></span>
       </script>
     </section>
 
@@ -94,23 +94,16 @@
       <script type="text/template">
         # Get to know each other
 
-        For this workshop, we'll be working in groups. The exercises we'll be doing depend on how well you know each other.
+        For this workshop, we'll be working in groups. The exercises will depend on how well you know each other.
 
         1. Break into groups of 4-5 people
-        2. Find out more about each other. Take notes and make a profile for each person on a piece of paper.
-
-          Here are some things you should try asking
-            * Age
-            * Places lived
-            * Occupation
-            * Schooling
-            * Pets
+        2. Get to know each other! Here are some icebreaker topics:
             * Hobbies
-            * Favourite books, movies, TV shows
+            * Pets you have
             * Favourite food
+            * Favourite bands or music artists
+            * Favourite books, movies, TV shows
 
-          It's okay to decline answering a question, but more complete profiles are better.
-        3. Save the profiles on the side for now. Label them with your initials. If people in the group share initials, add a number to distinguish them.
       </script>
     </section>
 
@@ -123,19 +116,18 @@
 
     <section class="slide" data-markdown>
       <script type="text/template">
-      #  Security Overview
+        #  Security Overview
 
-      Computers and the Internet play a huge role in our lives. They let us conveniently do work, keep in touch, and have fun.
+        Computers and the Internet play a huge role in our lives. They let us conveniently do work, keep in touch, and have fun.
 
-      However, we should be aware of the digital dangers. Consider what could go wrong when:
+        However, we should be aware of the digital dangers. Consider what could go wrong when:
 
-      * **Banking online and transferring money**
-      * **Sending emails and sharing files**
-      * **Chatting and using social media**
-      * **Installing smart devices in your home**
+        * **Banking online and transferring money**
+        * **Sending emails and sharing files**
+        * **Chatting and using social media**
+        * **Installing smart devices in your home**
 
-      To understand the possible perils, let's learn to **think like a hacker.**
-
+        To understand the possible perils, let's learn to **think like a hacker.**
       </script>
     </section>
 
@@ -151,7 +143,7 @@
       <script type="text/template">
       #  "What's the easiest way to get access to something?"
 
-      ![Path of least resistance](framework/img/workshop/path_of_least_resistance.jpg)
+      ![Path of least resistance](framework/img/workshop/path_of_least_resistance.jpg) <!-- .element:  style="width:50%" -->
 
       Hackers don't need complicated tools or a powerful computer to break into something. There usually are easier ways that take much less effort.
       </script>
@@ -161,7 +153,7 @@
       <script type="text/template">
       #  "What information is available for me to use?"
 
-      ![Bookshelf](framework/img/workshop/bookshelf.jpg)
+      ![Bookshelf](framework/img/workshop/bookshelf.jpg) <!-- .element:  style="width:50%" -->
 
       A hacker will leverage any information they can find to help them break into a system.
       </script>
@@ -171,9 +163,9 @@
       <script type="text/template">
       #  "What are patterns and weaknesses that I can exploit?"
 
-      ![Broken Chain](framework/img/workshop/broken_chain.jpg)
+      ![Broken Chain](framework/img/workshop/broken_chain.jpg) <!-- .element:  style="width:50%" -->
 
-      Hackers study behaviours in people and vulnerabilities in systems, just like a con artist.
+      Hackers study behaviours in people and vulnerabilities in systems, just like a con artist does to perform scams.
       </script>
     </section>
 
@@ -199,7 +191,7 @@
 
       This workshop aims to explain both the risks and consequences of technology as well as the security measures we can take to protect ourselves.
 
-      While it is generally encouraged to as secure as possible, it is up to you to decide what level of security you are comfortable with.
+      A little effort can go a long way, but it is up to you to decide what level of security you are comfortable with.
       </script>
     </section>
 
@@ -212,13 +204,35 @@
 
     <section class="slide" data-markdown>
       <script type="text/template">
+      #  Exercise 1: Create a Password (1 minute)
+
+      You want to create an account for the latest social media craze: **your**Space
+
+      On a small sheet of paper, write down a password you might use to sign up for a **your**Space account.
+
+      You have some password rules. You might have seem rules like these elsewhere
+      > * Your password has to be at least 6 characters long
+      > * Must contain at least one lower case letter
+      > * one upper case letter
+      > * one digit
+      > * one symbol ~!@#$%^&*()_+
+      > * It must not be a password you've used somewhere else
+
+      **The last point is really important. Make sure it's NOT an actual password you've used on any real account.**
+
+      We'll be using this password for a later exercise.
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
       #  Passwords
 
-      How many passwords do you have?
+      How many passwords do you have to remember and type on a daily basis?
 
-      On average, a person has **40 accounts** registered with their primary email address. When making a password, conditions are usually enforced that complicate the process to try to make them more secure.
+      On average, a person has **40 accounts** registered with their primary email address.
 
-      With so many credentials to remember and cumbersome rules, people have developed bad habits and misconceptions of how to handle their passwords.
+      With so many credentials to remember, often with cumbersome rules, people have developed bad habits and misconceptions when it comes to their passwords.
       </script>
     </section>
 
@@ -243,15 +257,18 @@
       <script type="text/template">
       #  Password Sharing
 
+      <!-- .element: style="width:50%;float:right;margin-left:5px" -->![Whisper](framework/img/workshop/whisper.jpg)
+
       Even if you think you can trust someone (can you really?), can you also trust them to never share it with someone else?
 
-      Some cases of compromised accounts are due to people carelessly sharing their passwords.
+      Many cases of compromised accounts are due to people carelessly sharing their passwords.
 
-      <!-- .element: class="centered-media" -->![Whisper](framework/img/workshop/whisper.jpg)
+      <!-- .element: style="clear:both" --> It’s *impossible* for someone to accidentally (or purposefully) leak a password if they never know it. If you really must share a password, be prepared to accept the risk.
 
-      It’s *impossible* for someone to accidentally (or purposefully) leak a password if they never know it. If you really must share a password, be prepared to accept the risk.
       </script>
     </section>
+
+    <!-- todo Instructor note, ask class if anyone showed their password to anyone else-->
 
     <section class="slide" data-markdown>
       <script type="text/template">
@@ -261,9 +278,11 @@
 
       <!-- .element: class="centered-media" --> ![Notepad](framework/img/workshop/notepad.jpg)
 
-      Passwords stored in these ways can be easily discovered or stolen, even if you think you can hide them well. The safest place for passwords is inside your head!
+      Despite how well you think you can hide passwords stored in these ways, they can be easily discovered or stolen.
       </script>
     </section>
+
+    <!-- todo Instructor note, make it ok that people wrote a password down for the exercise-->
 
     <section class="slide" data-markdown>
       <script type="text/template">
@@ -281,9 +300,9 @@
       <script type="text/template">
       #  Password Reuse
 
-      The worst that could happen is that someone gains access to **all of them!**
+      The worst that could happen is that someone **gains access to all of them!**
 
-      If you reuse the same password in different places, you become vulnerable to a **Password Stuffing Attack.** A hacker can take a set of stolen credentials and simply try them on other websites and services to see if they gain access.
+      If you reuse the same password in different places, you become vulnerable to a **Password Stuffing Attack.** A hacker can take a set of stolen credentials and simply try them on other logins to see if they gain access.
 
       <!-- .element: class="centered-media" --> ![Accounts](framework/img/workshop/accounts.png)
 
@@ -297,30 +316,38 @@
 
       What do you think of these passwords? Which ones are good or bad and why?
 
-      * dadada
-      * Password!1
-      * K1NGJ@mEs23
+      ![Mark Zuckerberg](framework/img/workshop/zuckerberg.jpg)<!-- .element: class="delayed" style="width:40%;float:right;margin-left:5px" -->
+
+      * 123456
+      * dadada **&larr;**<!-- .element: class="delayed" style="font-size:200%;line-height:0;color:#b1009a" -->
+      * Linkedin!1
+      * Zuck3rDaddy1984
       * 5BA!A61e4C9B93F3z#06
+
+      Which of these do you think was exposed as Facebook CEO Mark Zuckerberg's LinkedIn password?
+
+      <!-- todo: source  -->
       </script>
     </section>
 
     <section class="slide" data-markdown data-toc>
       <script type="text/template">
-      #  Exercise: How strong are your passwords? (10 mins)
+      #  Exercise 2: How strong are your passwords? (5 minutes)
 
-      **1.** On a new small sheet of paper, write down three passwords that you *might* use to sign up for an account or website. **Make sure they are NOT actual passwords you've used on any real accounts.**
-
-      **2.** Once you've written down your sample passwords, let's check how they strong they are with a tool to that checks password strength
-
-      **zxcvbn** - Open Source tool that checks advanced criteria. Harder to read, but much more detailed
-
-      >In the workshop files, go into the **Password Checker** folder and then open **zxcvbn - Password Checker**
-
-      **Roboform (zxcvbn)** - Online version of zxcvbn implemented by Roboform. Easier to read and use, but few details
+      Let's check the strength of the password you made earlier with a tool
 
       > Visit https://www.roboform.com/how-secure-is-my-password
 
-      **3.** Save your sheet of passwords for the next exercise. Do not write anything else on this paper.
+      If you password is labeled as weak or medium, try making some adjustments to it until it's at least good.
+
+      Write down this modified version of your password.
+
+
+      ---
+
+      Offline Version (harder to read and use, but much more detailed)
+
+      >In the workshop files, go into the **password_checker** folder and then open **zxcvbn_Password_Checker**
 
       </script>
     </section>
@@ -329,13 +356,9 @@
       <script type="text/template">
         #Password Strength Checkers
 
-
-
-        Password strength evaluations should be treated only as a baseline assessment.
+        Password strength tools are not perfect should be treated only as a baseline assessment.
 
         In other words, the suggested strength or crack time is the maximum amount of time it would take to crack a password, **but it may take less time**. Hacking methods are sophisticated and constantly improving.
-
-        If your password is listed as "weak" or only taking a few minutes/seconds to crack, you should highly consider making a change!
       </script>
     </section>
 
@@ -343,9 +366,9 @@
       <script type="text/template">
       #  What makes a good password?
 
-      A password’s job is to only allow the right person access something. Thus, a password should be **hard for someone else to guess**, but **easy for you to remember**.
+      <!-- .element: style="width:50%;float:right;margin-left:5px" --> ![Passwords](framework/img/workshop/pwchart.png)
 
-      <!-- .element: class="centered-media" --> ![Passwords](framework/img/workshop/pwchart.png)
+      A password’s job is to only allow the right person access something. Thus, a password should be **hard for someone else to guess**, but **easy for you to remember**.
 
       Unfortunately, many passwords fall on the left side of this chart
       </script>
@@ -359,58 +382,41 @@
       </script>
     </section>
 
-    <section class="slide" data-markdown>
-      <script type="text/template">
-      #  Conventional Password Rules
-
-      You’ve probably seen guidelines like these before:
-      > * Your password has to be at least 6 characters long
-      > * Must contain at least one lower case letter
-      > * one upper case letter
-      > * one digit
-      > * one symbol ~!@#$%^&*()_+
-
-      **Abc123!** is a password that fits these criteria.
-
-      We'll see how these rules often do more harm than good when it comes to creating secure passwords.
-      </script>
-    </section>
-
     <section class="slide" data-markdown data-toc>
       <script type="text/template">
       # Password Cracking
 
       What makes a password easy to guess? How do hackers even do the guessing?
 
-      <!-- .element: class="centered-media" --> ![Password Hack](framework/img/workshop/password_hacking.jpg)
+      Let’s learn about the actual methods hackers use to figure out passwords and determine what could make it more difficult for them.
 
-      Let’s look some of the actual methods hackers use to figure out passwords and determine what could make it more difficult for them.
+      Password cracking and security is a fasincating and complex topic deserving its own workshop.
+
+      We'll be focusing only on the basic ideas in these slides, but additional resources will be linked for those interested in learning more.
+
       </script>
     </section>
 
     <section class="slide" data-markdown>
       <script type="text/template">
-      #  Brute Force
+      # Method 1: Brute Force
 
       The idea behind this method is simple: Try all possible combinations of passwords and see if they grant access.
 
       * aaaaaaa
       * aaaaaab
       * aaaaaac
-      * ...
-      * aaaaaaa1
-      * aaaaaaa2
       * and so on...
 
-      Password security boils down to **delaying the inevitable**. A brute force will *eventually* check every password combination.
+      A lot of password security boils down to *delaying the inevitable*. A brute force attack can eventually check every password combination.
 
-      To understand our chances against brute force, let's look at **the number of possible password combinations** and speed that computers can guess passwords.
+      To understand our chances against brute force, we need to know the number of possible password combinations and speed that computers can guess passwords.
       </script>
     </section>
 
     <section class="slide" data-markdown>
       <script type="text/template">
-      # Brute Force Combinations
+      # Brute Force: Combinations
 
       Recall the rules from before:
 
@@ -422,67 +428,253 @@
 
       How many possible combinations could exist with these rules?
 
-      There are 26 upper and lower case letters, 10 digits, and 13 symbols meaning each character has a total of <!-- .element: class="delayed" -->**75** options.
+      </script>
+    </section>
 
-      Thus the password format looks like this<!-- .element: class="delayed" -->
+    <section class="slide" data-markdown>
+      <script type="text/template">
+      # Brute Force: Combinations
+
+      There are 52 upper and lower case letters, 10 digits, and 13 symbols meaning each character has a total of **75** options.
+
+      Thus the password format looks like this
       ```
           (75) (75) (75) (75) (75) (75)
       ```
-      <!-- .element: class="delayed" -->
 
       ```
-      eg. (s)  (3)  (c)  (R)  (e)  (t)
+      eg. ($)  (3)  (c)  (R)  (e)  (t)
       ```
-      <!-- .element: class="delayed" -->
 
-      In total, there are 75<sup>6</sup> total password combinations with these rules.
+      In total, there are **75<sup>6</sup> (or about 178 billion)** total password combinations with these rules.
 
-      How quickly could a computer crack a password like this?<!-- .element: class="delayed" -->
+      That's a lot of combinations to guess!
       </script>
     </section>
 
     <section class="slide" data-markdown>
       <script type="text/template">
-      #  Brute Force: Speed
+      #  Brute Force: Speed Analysis
 
-      Computers are way faster at performing calculations and repetitive tasks than humans are. How quickly do you think a single strong computer can guess passwords?
+      <!-- .element: style="max-width:40%;float:right;margin-left:5px;margin-top:-2%;padding:2px" -->![Typing Cat](framework/img/workshop/typing_cat.gif)
 
-      Some sites restrict the number of login attempts, but you can’t assume all of them do. Many hackers also use **offline attacks** which can bypass this safeguard.
+      A person could probably try a dozen combinations in a minute and maybe several thousand in a day.
 
-        a) 10 guesses/minute<!-- .element: class="delayed" -->
+      Computers are way faster at performing repetitive tasks than humans are, making them perfect for brute forcing passwords.
 
-        b) 1000 guesses/minute<!-- .element: class="delayed" -->
+      Let's do an analysis to see just how quick they are.
 
-        c) 100,000 guesses/second<!-- .element: class="delayed" -->
+      <!-- .element: style="clear:both" -->The rate at which computers guess passwords depends on two main factors:
 
-        d) 2 billion guesses/second<!-- .element: class="delayed" -->
+      * **Computing power of the device**
+      * **How the password is processed<sup>1</sup>**
 
-        e) 1.5 quintillion guesses/second<!-- .element: class="delayed" -->
+      ---
+      ###Further Reading
 
-        The answer is...<!-- .element: class="delayed" -->
-
-        <!-- .element: class="delayed" -->**2 billion guesses per second!** A computer can do this 24 hours a day without stopping.
-
+      * <sup>1</sup>Passwords are rarely guessed directly as they are often stored as **cryptographic hashes** with **salting**. The type of hash is a big factor in cracking time.
+      * See [this article](https://lifehacker.com/how-your-passwords-are-stored-on-the-internet-and-when-5919918) or watch this [video](https://www.youtube.com/watch?v=8ZtInClXe1Q) for more information.
       </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+      #  Brute Force: Device
+
+      <!-- .element: class="delayed" style="width:40%;float:right;margin-left:5px;margin-top:-2%;padding:2px" --> ![PlayStation 4](framework/img/workshop/ps4.png)
+
+      What sort of crazy device will we choose for our analysis? You may have seen one before:
+
+      <!-- .element: class="delayed"-->**A Playstation 4!**
+
+      <!-- .element: class="delayed"-->Retail Price (2019): ~$400
+
+      <!-- .element: class="delayed"-->Password Guessing Speed: (Any guesses?)
+
+      <!-- .element: class="delayed"-->Couple hundred a minute? Several million a day?
+
+      <!-- .element: class="delayed"-->**Almost 2 billion guesses/second! That's 172 trillion a day!**
+
+      <!-- .element: class="delayed" style="clear:both;""-->Game consoles are really just computers. Turns out they're good at more than just playing games!
+
+      ---
+      ###Notes
+      * <!-- .element: class="delayed"-->This example serves as a representation of computing power. A real PS4 would need to be heavily modified by an expert to crack passwords.
+      * <!-- .element: class="delayed"-->While using a game console for our analysis might seem silly, there's actually a history of using PlayStations for supercomputing! [Example 1](https://electronics.howstuffworks.com/ps3-folding-question.htm), [Example 2](https://phys.org/news/2010-12-air-playstation-3s-supercomputer.html)
+      </script>
+      <!--Hello curious reader!
+
+        I assume you're asking how we derived this 2 billion guesses/second number
+
+        We get some benchmarks for modern hardware on cracking software here: https://www.blackhillsinfosec.com/hashcat-benchmarks-nvidia-gtx-1080ti-gtx-1070-hashcat-benchmarks/
+
+        1 1080 Ti can calculate approx 11.3B h/s.
+        1 1070 can calculate approx 6B h/s
+
+        That's right, modern hardware can calculate 11.3 billion hashes per second!
+
+        These map to approx 10.6 and 5.8 tflops respectively. tflops are a measure of raw computing power https://en.wikipedia.org/wiki/GeForce_10_series
+
+        The relationship between raw performance in tflops to billions of hashes calculated per second is about 1.047x
+
+        We find the PS4 can operate at 1.84 tflops https://www.techpowerup.com/gpu-specs/playstation-4-gpu.c2085
+
+        Thus with the PS4's raw computing power computing power, you could calculate around 1.92B h/s
+
+        We round this to a clean 2B h/s for ease of calculation and presentation
+
+        In reality it would quite a bit slower due inefficiencies in adapting PS4 hardware to password cracking but this is more of an illustrative exercise than a practice one.-->
+    </section>
+
+    <section class="slide">
+
+      <style>
+        table {
+          width: 100%;
+          font-size:90%;
+          text-align: center;
+        }
+        thead tr th{
+          background-color: #b1009a;
+          color: white;
+          text-align: center;
+        }
+        td {
+          font-size: 80%;
+        }
+
+        .pw-len {
+          font-size:75%;
+          font-weight:bold;
+        }
+        .len-6 span{
+          color:red;
+        }
+        .len-8 span{
+          color:orange;
+        }
+        .len-10 span{
+          color:green;
+        }
+        .len-12 span{
+          color:blue;
+        }
+      </style>
+
+      <h1>Brute Force: Time to Crack</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Password Type</th><th>Password Ex.</th><th>Total Combinations</th><th>Max Time to Crack <br> (2B guesses/sec)</th>
+          </tr>
+        </thead>
+
+        <tbody class="len-6 delayed">
+          <tr>
+            <td>Letters only
+                <br>
+                <span class="pw-len">Length: 6</span>
+            </td>
+            <td>Secret</td>
+            <td>52<sup>6</sup> ≈ 20 billion</td>
+            <td>10 seconds</td>
+          </tr>
+          <tr>
+            <td>Letters + Numbers
+              <br>
+              <span class="pw-len">Length: 6</span>
+            </td>
+            <td>S3cret</td>
+            <td>62<sup>6</sup> ≈ 57 billion</td>
+            <td>28 seconds</td>
+          </tr>
+          <tr>
+            <td>L + Num + Symbols
+              <br>
+              <span class="pw-len">Length: 6</span>
+            </td>
+            <td>$3cRet</td>
+            <td>75<sup>6</sup> ≈ 178 billion</td>
+            <td>89 seconds</td>
+          </tr>
+        </tbody>
+
+        <tbody class="len-8 delayed">
+          <tr>
+            <td>Letters only
+                <br>
+                <span class="pw-len">Length: 8</span>
+            </td>
+            <td>Password</td>
+            <td>52<sup>8</sup> ≈ 53 trillion</td>
+            <td>7.4 hours</td>
+          </tr>
+          <tr>
+            <td>Letters + Numbers
+              <br>
+              <span class="pw-len">Length: 8</span>
+            </td>
+            <td>Passw0rd</td>
+            <td>62<sup>8</sup> ≈ 218 trillion</td>
+            <td>30 hours</td>
+          </tr>
+          <tr>
+            <td>L + Num + Symbols
+              <br>
+              <span class="pw-len">Length: 8</span>
+            </td>
+            <td>P@ssw0rd</td>
+            <td>75<sup>8</sup> ≈ 1 quadrillion</td>
+            <td>6 days</td>
+          </tr>
+        </tbody>
+        <tbody class="len-10 delayed">
+          <tr>
+            <td>L + Num + Symbols
+              <br>
+              <span class="pw-len">Length: 10</span>
+            </td>
+            <td>Superman!1</td>
+            <td>75<sup>10</sup> ≈ 5.6 quintillion</td>
+            <td>89 years</td>
+          </tr>
+        </tbody>
+        <tbody class="len-12 delayed">
+          <tr>
+            <td>L + Num + Symbols
+              <br>
+              <span class="pw-len">Length: 12</span>
+            </td>
+            <td>CLCisGreat!1</td>
+            <td>75<sup>12</sup> ≈ 31.6 sextillion</td>
+            <td>Half a million years</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <hr>
+      <h3>Notes</h3>
+      <ul>
+        <li>
+          The last column is the <strong>maximum time</strong> it would take to crack a password. On average, it would take about half as much time and even less with more advanced logic.
+        </li>
+        <li>
+          The password processing method used in our calculations is called <strong>SHA-1</strong>, which is widely used. You don't need to know how it works, but here's an <a href="https://brilliant.org/wiki/secure-hashing-algorithms/">article</a> with details.
+        </li>
+        <li>
+          Some websites will rate limit the number of tries you can make, but not all do. Hackers also commonly bypass this safeguard using an <strong>offline attack</strong>, which attempts to crack leaked password hashes.
+        </li>
+      </ul>
     </section>
 
     <section class="slide" data-markdown>
       <script type="text/template">
       # Brute Force: Time to Crack
 
-      |Password Type|Example|Total Possible Combinations|Maximum Time to Crack (2b guess/sec)|
-      |--|--|--|--|
-      |Short and Simple|Secret|52^6 = 19.7 billion|9.9 seconds|
-      </script>
-    </section>
+      <!-- .element: class="delayed" style="width:40%;float:right;margin-left:5px;margin-top:-2%;padding:2px" -->![Fast Computer](framework/img/workshop/fast_computer.jpg)
 
-    <section class="slide" data-markdown>
-      <script type="text/template">
-      # Brute Force: Time to Crack
 
-      89 years is a pretty long time, but that’s only one computer. What if a criminal organization had access to a more powerful setup that is even faster?
-
-      <!-- .element: class="delayed centered-media" -->![Fast Computer](framework/img/workshop/fast_computer.jpg)
+      Half a million years is a pretty long time, but that’s only one computer. What if a criminal organization had access to a machine more powerful than a Playstation 4?
 
       Fortunately we have the power of exponents on our side. A <!-- .element: class="delayed" -->**15 character long** password would take even a machine like this **millions of years** to brute force.
 
@@ -491,9 +683,31 @@
 
     <section class="slide" data-markdown>
       <script type="text/template">
+      # Exercise 3: Longer passwords (1 minute)
+
+      We've advised the team at **your**Space to change their password policies.
+
+      They send out their revised guidelines in an email to their users.
+
+      > Our password policy has been updated. Please change your password.
+
+      > * **Your password has to be at least 10 characters long**
+      > * Must contain at least one lower case letter
+      > * one upper case letter
+      > * one digit
+      > * one symbol ~!@#$%^&*()_+
+
+      Let's update our own password to fit these new rules. On your password sheet, add a new updated password that is at least 10 characters long.
+
+      If your previous one was already at least 10, just make a new password.
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
       # Withstanding Brute Force
 
-      Instead of adding different types of characters, it seems like all we need to do is **make passwords longer.**
+      When it comes to protecting yourself brute force, the most important tip is to **make passwords longer.**
 
       But is this enough? <!-- .element: class="delayed" -->
 
@@ -524,18 +738,17 @@
       <script type="text/template">
       # Composing a Dictionary
 
-      Hackers generate a **dictionary** of likely password candidates by analyzing trends in existing data breaches. They use this dictionary run their password guessing attempts.
+      Hackers generate a **dictionary** of likely password candidates by analyzing trends in existing data breaches. They use this dictionary to run their password guessing attempts.
 
-      Some of common elements and patterns found in data breaches include:
+      Some common elements and patterns found in data breaches include:
 
-      * Names and places - **johnsmith**
-      * Common words and phrases - **iloveyou**
+      * Names - **johnsmith**
       * Keyboard patterns - **qwerty**
-      * Famous characters or places - **superman**
       * Website names - **myfacebookpassword**
+      * Common words and phrases - **iloveyou**
+      * Famous characters or places - **superman**
 
       Each new data breach helps hackers improve their dictionaries by giving them data on what people use for passwords.
-
       </script>
     </section>
 
@@ -547,11 +760,17 @@
 
       Here are some common ways people make variations on **"password"**:
 
-      * Append years or numbers to the end - **password1982**
-      * Simple additions to fit password rules - **Password!1**
-      * Common substitutions - **p@ssW0rD**
+      * Trivial additions to fit password rules - **Password!1** (10 chars long)
+      * Adding years to the beginning or end - **password1982** (12 chars long)
+      * Common substitutions, word additions - **NetflixP@ssW0rD** (15 chars long)
 
-      These extra variations can be easily programmed by the hacker into their password cracking software. Remember, these variations can be guessed at a rate of 2 billion/second!
+      These extra variations can be easily programmed by the hacker into their password cracking software. Remember, these variations can be guessed at a rate of **2 billion/second** with only $400 worth of computing power!
+
+      ---
+      ###Notes
+      * It's hard to say exactly how much faster a dictionary attack is compared to brute force. It depends on the predictability of the password and hackers are constantly improving their methods.
+      * Since Dictionary attacks are so much more effective, plain brute force is used more of a fallback option.
+
       </script>
     </section>
 
@@ -563,35 +782,37 @@
 
       This research is also known as **doxxing**, which refers to looking up "docs" that are available on the Internet. Common sources include social media, public records, and data breaches.
 
-      <!-- .element: class="centered-media" --> ![Queen Elizabeth II](framework/img/workshop/queen.jpg)
+      <!-- .element: style="width:40%;float:right;padding-left:5%" --> ![Queen Elizabeth II](framework/img/workshop/queen.jpg)
 
       What do you think Queen Elizabeth II’s password could be?
 
       * **Philip1947** (Family, important years)
       * **@BuckinghamP** (Residence, simple additions)
       * **iLuvC0rgis!!** (Pets, common substitutions and spellings)
+
+      <!-- .element: style="clear:both" -->More on **doxxing** later in the Privacy section.
       </script>
     </section>
 
     <section class="slide" data-markdown>
       <script type="text/template">
-      #Exercise: Match the passwords (10 minutes)
+      #Exercise 4: Match the passwords (15 minutes)
 
       Let's find out how predictable our password are.
 
-      **1.** Gather the profile and password sheets for each person in your group and scramble them.
+      **1.** Gather the password sheets for each person in your group and scramble them
 
-      **2.** Trade your group's profiles and password sheets with another group.
+      **2.** As a group, identify any short or common passwords
 
-      **3.** Discuss with your group to match the other group's passwords to the correct person's profile. Make your guess by writing the profile initials on the password sheet. Circle any common and weak passwords (eg. password, qwerty, 123456).
+      **3.** Try to guess the creator of each set of passwords. Use what you learned from your introductions at the beginning of the class as clues!
 
-      **4.** Once you've made your guesses, return the profile sheets and passwords to the original group.
+      **4.** Once you've made your guesses, discuss what lead you to your choices and why certain passwords were weak.
 
-      **5.** Time to score your passwords! If your initials were written on your password sheet, give yourself **three (3)** points. For each circled password, give yourself **two (2)** points.
+      **5.** Class Discussion:
 
-      The higher the points, the more vulnerable your passwords!
-
-       <!-- .element: class="delayed"--> **Discussion**: What were some of the clues that helped you guess each person's passwords?
+      * What were some of the worst passwords in each group?
+      * Were there any interesting clues?
+      * What advice would you give advice to your friends and family about passwords?
       </script>
     </section>
 
@@ -599,7 +820,7 @@
       <script type="text/template">
       # Passwords: Problem Summary
 
-      Most of our issues come from having too many passwords to remember. As a result, we compromise our security by **writing them down**, **reusing them**, and **making them too simple**.
+      Most of our issues come from having too many passwords to remember. As a result, we compromise our security by **writing them down**, **reusing them**, and **making them too easy to guess**.
 
       <!-- .element: class="centered-media" --> ![Password Overload](framework/img/workshop/overload.jpg)
 
@@ -614,6 +835,8 @@
       What if instead of remembering **dozens of bad passwords**, you could focus on remembering **a few good ones?**
 
       **Password managers** are tools that help generate secure passwords for all of your different accounts and then safely store them for you.
+
+      The password manager can alleviate most of the burden in managing your credentials and even help you login automatically, making them quite convenient.
       </script>
     </section>
 
@@ -621,25 +844,56 @@
       <script type="text/template">
       # How Password Managers Work
 
-      A person comes up with a strong Master Password to remember.
+      <!-- .element: style="max-width:50%;float:right;padding-left:5%" --> ![Password Manager](framework/img/workshop/pw-manager.png)
 
-      The manager helps generate and store secure passwords in a Password Database.
+      1. A person comes up with a strong Master Password to remember.
 
-      The person installs the password manager onto their devices. They unlock the database with the master password and the password manager automatically fills in the right credentials when signing in.
+      2. The manager helps generate and store secure passwords in a protected Password Database.
 
-      <!-- .element: class="centered-media" --> ![Passwords](framework/img/workshop/pwchart.png)
+      3. The person installs the password manager onto their devices. Each device will be able to access database.
 
-      <!-- .element: class="delayed" -->
+      4. The Password database is unlocked with the master password.
+
+      5. The password manager automatically fills in the right credentials when signing in to a website.
+
+      ---
+      ###Resources
+      [Image Credit](https://pixelprivacy.com/password-managers/)
       </script>
     </section>
 
     <section class="slide" data-markdown>
       <script type="text/template">
-      # TODO: Last Pass
+      # Picking a Password Manager
 
-      <!-- .element: class="centered-media" --> ![Passwords](framework/img/workshop/pwchart.png)
+      It is important to pick a reputable and trusted password manager. Some lesser known free ones are fakes that try to steal your information!
 
-      <!-- .element: class="delayed" -->
+      We recommend **LastPass**: https://www.lastpass.com/
+
+      It is free to use and works on most browsers and devices. The paid version comes with some nice extra features, but aren't necessary for the average person.
+
+      Here are some other options you can try. You should always do some research to pick the option that suits you best:
+
+      * **1Password:** https://1password.com/
+      * **Dashlane:** https://www.dashlane.com/
+      * **KeePass:** https://keepass.info/ - (For more advanced users)
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+      # Setting up a Password Manager
+
+      Each tool operates a bit differently, but in general here are the steps you'll have to take
+
+      1. Create an account to manage your passwords
+      2. Create a **secure** master password (more on this soon!)
+      2. Install the tool
+      3. Transfer your existing passwords to the manager
+      4. Update any old and weak passwords with the help of the manager
+
+      It's recommend that you visit your respective password manager's help site for more information.
+
       </script>
     </section>
 
@@ -660,7 +914,7 @@
         * <!-- .element: class="delayed" -->Be accessed if you ever forget your master password
         * <!-- .element: class="delayed" -->Enter passwords in some places like signing into a computer
         * <!-- .element: class="delayed" -->Protect against breaches on the website or service itself (though having unique passwords for each site mitigates the impact)
-        * <!-- .element: class="delayed" -->Protect against **keyloggers**, which are malicious programs that record what you type
+        * <!-- .element: class="delayed" -->Protect against **keyloggers**, which are malicious programs that record what you type. More on these later!
       </script>
     </section>
 
@@ -668,11 +922,11 @@
       <script type="text/template">
       # Creating Better Passwords
 
-      Your Master password needs to be *extra secure* as you’ll be using it access the rest of your passwords.
+      The master password you choose for your password manager needs to be *extra secure* as you’ll be using it access the rest of your passwords.
 
       To be considered secure, it needs to be
 
-      * **Long** to resist raw brute force attacks (15+ characters)
+      * **Long** to resist raw brute force attacks (12 minimum, 15+ is good)
       * **Unpredictable** to resist dictionary attacks
       * **Unrelated** to personal information to make it harder to research
       </script>
@@ -682,7 +936,7 @@
       <script type="text/template">
       # Secure passwords
 
-      Here are some secure passwords you could use as a master password
+      Here are some examples you could use as a master password
 
       * DjN2R&qAY2Nk5$u
       * B9hN%9wpBK!ag82
@@ -704,14 +958,15 @@
 
       If you were successful, do you think you would remember them in a week from now?
 
+      <!-- .element: style="max-width:50%;float:right;padding-left:3%;margin-top:-2%" --> ![Keychain](framework/img/workshop/keychain.jpg)
+
       Even with a password manager, you'll still have to memorize a handful of passwords for situations that can't be used with the manager.
       </script>
     </section>
 
-
     <section class="slide" data-markdown>
       <script type="text/template">
-      # Exercise: Creating a Passphrase (10 minutes)
+      # Exercise 5: Creating a Passphrase (15 minutes)
       One strategy for more secure passwords is to make a **passphrase** using a fun technique.
 
       **1. Brainstorm a list of items for each of the following categories. Try to come up with at least *five* ideas for each one**
@@ -729,7 +984,7 @@
 
     <section class="slide" data-markdown>
       <script type="text/template">
-      # Exercise: Creating a Passphrase (10 minutes)
+      # Exercise: Creating a Passphrase
       **2. Pick a template and fill it in with your lists of words. **
 
       * A [Unit] of
@@ -746,23 +1001,24 @@
 
       eg. Teal Cuban Gucci Chocolate
 
-      Play around with different combinations; the sillier the better! Try to imagine these in your head.
-
+      Play around with different combinations. It doesn't have to make sense; the sillier the better! Try to imagine these in your head.
       </script>
     </section>
 
     <section class="slide" data-markdown>
       <script type="text/template">
-      # Exercise: Creating a Passphrase (10 minutes)
+      # Exercise: Creating a Passphrase
       **3. Remove the spaces, change the capitalizations, insert some extra symbols and numbers anywhere besides at the beginning or end**
 
       You may also omit some letters and change spellings
 
       eg. agAll%onOFtiny7hiPPoshoppeD
 
-      And there you have it, a secure passphrase to use as a master password.
+      And there you have it! A secure passphrase to use as a master password.
 
       However, **DO NOT** actually use the password from this slide for yourself. Anyone who has seen these slides knows about it and makes it unsecure.
+
+      Share some of the passwords you came up with your group. Just make sure you don't end up using it for real later on!
       </script>
     </section>
 
@@ -773,17 +1029,20 @@
       How secure is a password like **agAll%onOFtiny7hiPPoshoppeD** ?
 
       ##Is it long enough to resist raw brute force?
-
-      A 27 character password takes up to 2<sup>51</sup> years to crack with raw brute force!
+        A 27 character password takes up to <!-- .element: class="delayed" -->2<sup>51</sup> years to crack with raw brute force!
 
       ##Is this a commonly used password?
-      This phrase is unique and won’t be found in a dictionary of common passwords
+      This phrase is unique and won’t be found in a dictionary of common passwords<!-- .element: class="delayed" -->
 
       ##Are there any personally relatable terms?
-      Probably not unless you’re a known tiny hippo enthusiast
+      Probably not unless you’re a known tiny hippo enthusiast<!-- .element: class="delayed" -->
 
       ##Does it exist somewhere that can be searched? <!-- .element: class="delayed" -->
       <!-- .element: class="delayed" -->**Yes!** You can find this password on these slides. Remember not to use this specific password - it is just an example!
+
+      ---
+      ###Notes
+      * A talented hackers could figure out common linguistic patterns that might be used for passphrases and narrow their search space. It is still much better the average password though!
       </script>
     </section>
 
@@ -799,7 +1058,7 @@
 
       The method also creates a silly story you can visualize for yourself in your mind (just imagine those tiny hippos).
 
-      After typing your password a couple times, you should be able to memorize it fairly quickly.
+      It's important to practice a few times once you make your passphrase. After a couple times, you should be able to memorize it without a problem and you'll be using it regularly so it's unlikely you'll forget it.
       </script>
     </section>
 
@@ -807,22 +1066,29 @@
       <script type="text/template">
       # Other Secure Password Strategies
 
-      No password strategy is perfect. There will always be trade-offs between **security** and **convenience**.
+      Though they're much better than average passwords, passphrases aren't perfect. Remember, it's a trade-off between **security** and **convenience**
 
       The passphrase method is recommended because it is simple to use and memorize, but still has vulnerabilities. Passphrases can also be long to type, especially on touch screens.
 
-      Here are some other methods you may want to consider:
+      The next two slides will quickly show some other passwords you can try.
+      </script>
+    </section>
 
-      ##Phonetic Passwords
+    <section class="slide" data-markdown>
+      <script type="text/template">
+      #Phonetic Passwords
       Passwords made up of phonetic sounds to create pronouncable, but fake words. You can use a generator to help you come up with ideas
 
       https://www.lastpass.com/password-generator
 
-      <!-- .element: class="centered-media" --> ![Phonetic](framework/img/workshop/phonetic.png)
+      https://tools.arantius.com/password
 
-      Set to **Easy to say**, increase the length, and add in some characters and numbers afterwards for extra security.
+      Add number and symbols to maximize the strength of the password.
 
-      eg. barNaGin$GENTAg7N
+      * Vooca5juux5isi1
+      * Fooy5eloida2h+89
+
+      If you're creatively inclined, unique fantasy character names like **Ryphandir Sondos** or **Luvindra Baelphalem** also work great. Make sure you haven't already published a book about them though!
       </script>
     </section>
 
@@ -858,9 +1124,9 @@
 
       Conventional knowledge suggests changing passwords occasionally so passwords don’t become “stale” and vulnerable to attacks. However in practice, frequent password changes encourages people to make weaker passwords.
 
-      Most experts now suggest to only change a password *when you are notified of a security breach*, though some services may still impose occasional password changes because of outdated standards.
+      Most experts now suggest to only change a password *when you are notified of a security breach*.
 
-      Be wary of requests to change your password as these are sometimes **phishing** attempts.
+      Some services may still impose occasional password changes because of outdated standards. Be wary of requests to change your password as these are sometimes **phishing** attempts.
       </script>
     </section>
 
@@ -870,13 +1136,13 @@
 
       **Multi-Factor Authentication (MFA or 2FA)** adds an additional layer of security on top of passwords.
 
-      Normally, simply knowing the account name and password is all you need to sign into an account. With MFA enabled, you need **both the password and a code from an additional authenticator**.
+      <!-- .element: style="width:50%;float:right;margin-left:5px" -->![Multi-Factor Authentication](framework/img/workshop/multifactor.jpg)
 
-      <!-- .element: class="centered-media" --> ![Multi-Factor Authentication](framework/img/workshop/multifactor.jpg)
+      Normally, simply knowing the account name and password is all you need to sign into an account. With MFA enabled, you need **both the password and a code from an additional authenticator**.
 
       A hacker would need to somehow discover your password and access to your authenticator to gain access to your account.
 
-      Every site has different ways of enabling MFA so check their instructions for setting it up.
+      <!-- .element: style="clear:both" -->Every site has different ways of enabling MFA so check their instructions for setting it up.
       </script>
     </section>
 
@@ -888,7 +1154,11 @@
 
       <!-- .element: class="centered-media" --> ![Multi-Factor Authentication - Text](framework/img/workshop/mfa_text.png)
 
-      This method is popular as most people carry their phones with them at all times. However, there have been proven attacks against SMS authenticators, though using this option is still much better than using nothing!
+      This method is popular as most people carry their phones with them at all times. However, there have been proven attacks against SMS authenticators<sup>1</sup>, though using this option is still much better than using nothing!
+
+      ---
+      ###Further Reading
+      * <sup>1</sup>These are known as SIM Port hacks. Read about them [here](https://medium.com/coinmonks/the-most-expensive-lesson-of-my-life-details-of-sim-port-hack-35de11517124)
       </script>
     </section>
 
@@ -896,19 +1166,19 @@
       <script type="text/template">
       # MFA Options
 
-      Authenticator apps like LastPass Authenticator and Google Authenticator provide a nice balance between convenience and security.
+      <!-- .element: style="max-width:20%;float:right;padding-left:2%" --> ![Google Authenticator](framework/img/workshop/google-2fa.jpg)
 
-      <!-- .element: class="centered-media" --> ![Google Authenticator](framework/img/workshop/google-2fa.jpg)
+      Authenticator apps like LastPass Authenticator and Google Authenticator provide a nice balance between convenience and security.
 
       If supported, the most secure option is to use a physical authenticator key like the YubiKey (https://www.yubico.com/).
 
-      ![Google Authenticator](framework/img/workshop/yubikey.png)
+      <!-- .element: style="max-width:40%"-->![Yubikey](framework/img/workshop/yubikey.png)
       </script>
     </section>
 
     <section class="slide" data-markdown data-toc>
       <script type="text/template">
-      # Recovery Questions
+      # Recovery/Security Questions
 
       Recovery questions are especially vulnerable to **doxxing**. A hacker do some research to find the information you use for your recovery questions such as:
 
@@ -917,16 +1187,13 @@
       * Hobbies and interests
       * Past Vacations
 
-      Some websites still require recovery questions. The recommendation is to use unrelated, but memorable terms. You may also use a password manager to keep a secure note of the
-      terms being used for recovery.
+      Some websites still require recovery questions. The recommendation is to use unrelated, but memorable terms. You may also use a password manager to keep a secure note of the terms being used for recovery.
       </script>
     </section>
 
     <section class="slide title" data-markdown data-toc>
       <script type="text/template">
       # Phishing
-      <!-- .element: class="centered-media" --> ![Phisher](framework/img/workshop/phisher.jpg)
-
       </script>
     </section>
 
@@ -936,7 +1203,7 @@
 
       Phishing attempts try to obtain someone’s credentials or get them to perform an action by masquerading as a legitimate party
 
-      They target sensitive information such as **passwords and financial details** or try to get a person to **send money.**
+      They target sensitive information such as **passwords and personal information** or try to get a person to **send money.**
 
       <!-- .element: class="centered-media" --> ![Phisher](framework/img/workshop/phisher.jpg)
 
@@ -945,11 +1212,11 @@
 
     <section class="slide" data-markdown>
       <script type="text/template">
-      # Spot the Phish!
+      # Exercise 6: Spot the Phish!
 
       Let’s take a look at some emails and websites on the next few slides. Guess which ones are real and which ones are fake.
 
-      For the ones you think are fake, make note of the things that stand out to you.
+      Discuss the slides with your group. For the ones you think are fake, make note of the things that stand out to you.
 
       </script>
     </section>
@@ -957,7 +1224,7 @@
     <section class="slide" data-markdown>
       <script type="text/template">
       #Round 1
-      <!-- .element: class="centered-media" -->![CIBC](framework/img/workshop/phish/cibc.png)
+      ![CIBC](framework/img/workshop/phish/cibc.png)<!-- .element: style="width:75%;display:block;margin:auto;" -->
 
       </script>
     </section>
@@ -965,7 +1232,7 @@
     <section class="slide" data-markdown>
       <script type="text/template">
       #Round 2
-      <!-- .element: class="centered-media" -->![Amazon](framework/img/workshop/phish/amazon.jpg)
+      ![Amazon](framework/img/workshop/phish/amazon.jpg)<!-- .element: style="width:75%;display:block;margin:auto;" -->
 
       </script>
     </section>
@@ -973,7 +1240,7 @@
     <section class="slide" data-markdown>
       <script type="text/template">
       #Round 3
-      <!-- .element: class="centered-media" -->![Password Reset](framework/img/workshop/phish/password_reset.png)
+      ![Password Reset](framework/img/workshop/phish/password_reset.png)<!-- .element: style="width:70%;display:block;margin:auto;" -->
 
       </script>
     </section>
@@ -981,7 +1248,7 @@
     <section class="slide" data-markdown>
       <script type="text/template">
       #Round 4
-      <!-- .element: class="centered-media" -->![Dating](framework/img/workshop/phish/dating.jpg)
+      ![Dating](framework/img/workshop/phish/dating.jpg)<!-- .element: style="width:50%;display:block;margin:auto;" -->
 
       </script>
     </section>
@@ -989,14 +1256,16 @@
     <section class="slide" data-markdown>
       <script type="text/template">
       #Round 5
-      <!-- .element: class="centered-media" -->![Paypal](framework/img/workshop/phish/paypal.jpg)
+      ![Paypal](framework/img/workshop/phish/paypal.jpg)<!-- .element: style="width:65%;display:block;margin:auto;" -->
 
       </script>
     </section>
 
     <section class="slide title" data-markdown>
       <script type="text/template">
-      # They're all fakes!
+      #Answers:
+
+      # They're all fakes!<!-- .element: class="delayed" -->
       </script>
     </section>
 
@@ -1008,9 +1277,9 @@
 
       Remember, it's a scammer's job to make these scams as believable as possible. They try to exploit our natural tendencies and lack of awareness.
 
-      If you doubted these examples, do you think you would have noticed them if they weren't a part of a security course?
+      If you doubted these examples, that's great!
 
-      Hackers only need you to slip up once and can catch you when you least expect it.
+      However, do you think you would have noticed them if they weren't a part of a security course? Hackers only need you to slip up once and can catch you when you least expect it.
       </script>
     </section>
 
@@ -1022,7 +1291,7 @@
 
       As of 2019:
 
-      * The cybercrime economy has grown to **$1.5 trillion** in profits a year. That's almost the GDP of Canada!
+      * The cybercrime economy has grown to **$1.5 trillion** in profits a year. That's almost the GDP of Canada in 2018!
       * **76% of businesses** reported being a victim of a phishing attack in the last year
       * **60% of North Americans** say they or a close family member have been victims of a security scam or breach
       * Around **1.5 million** new phishing sites are created each month
@@ -1058,6 +1327,9 @@
       * <!-- .element: class="delayed" -->**Imitating compositional style** in emails to make messages seem more genuine
       * <!-- .element: class="delayed" -->**Digitally Certified websites.** The little lock symbol you see beside the URL in your browser once
 
+      ##Optional Exericse: Take a Second Look<!-- .element: class="delayed" -->
+
+      Go through the Spot the Phish exercise and use the last two slides as reference<!-- .element: class="delayed" -->
       </script>
     </section>
 
@@ -1072,6 +1344,14 @@
       Spear Phishing usually targets important people in organization that control finances or sensitive information.
 
       The process of using information to gain a person's trust and manipulating them to do something is also known as **Social Engineering**.
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+      # Spear Phishing Example
+
+      ![Spear Phish](framework/img/workshop/phish/spear.png)<!-- .element: style="width:65%;display:block;margin:auto;" -->
 
       </script>
     </section>
@@ -1101,7 +1381,7 @@
 
       ##URL or sender email looks wrong or suspect. Watch out for subtle differences
 
-      * eg. amazonn.com, security@royalbanksecurity.com, facebook.secure.ca
+      * eg. yourespace.com, amazonn.com, facebook.secure.ca
       * If you didn't type in a site address manually, be extra careful!
 
       ##Vague greetings, spelling mistakes, and poor grammar
@@ -1133,7 +1413,7 @@
       # What to do if you think you caught a Phish
 
       ## Confirm with the Sender
-      * If you are not sure if the sender is real, send an email to the original source by manually creating a new message. You can also use another form of communication such as phone, text, or a chat program to confirm. It is unlikely for a hacker to control multiple forms of communication.
+      * If you are not sure if the sender is real, compose a new separate email to the original source. You can also use another form of communication such as phone, text, or a chat program to confirm.
 
       ## Report it to the authorities
       * For emails or websites pretending to be an institution, forward them to the real institution.
@@ -1175,21 +1455,16 @@
 
       Stay skeptical!
 
-      For more information
-      Canadian Anti-Fraud Center
-      http://www.antifraudcentre-centreantifraude.ca/fraud-escroquerie/index-eng.htm
-
-      Little Black Book of Scams - Competition Bureau of Canada
-      https://www.competitionbureau.gc.ca/eic/site/cb-bc.nsf/eng/04333.html
+      ---
+      ###Resources
+      * [Canadian Anti-Fraud Center](http://www.antifraudcentre-centreantifraude.ca/fraud-escroquerie/index-eng.htm)
+      * [Little Black Book of Scams - Competition Bureau of Canada](https://www.competitionbureau.gc.ca/eic/site/cb-bc.nsf/eng/04333.html)
       </script>
     </section>
 
-    <section class="slide centered" data-markdown data-toc>
+    <section class="slide title" data-markdown data-toc>
       <script type="text/template">
       # Privacy
-
-      ![Passwords](framework/img/workshop/camera.png)
-
       </script>
     </section>
 
@@ -1210,9 +1485,9 @@
       <script type="text/template">
       # Why is Privacy Important?
 
-      Most people agree that privacy is important to have, but it's worth exploring *why* with some thought experiments.
+      Most people agree that privacy is important to have, but it's worth exploring exactly *why* with some thought experiments.
 
-      **1. Do you have anything worth keeping to yourself?**
+      ##Do you have anything worth keeping to yourself?
 
       Have you heard something like this before?
 
@@ -1226,48 +1501,85 @@
 
     <section class="slide" data-markdown>
       <script type="text/template">
-      # Why is Privacy Important?
+      # Do you have anything worth keeping to yourself?
 
-      This reasoning is often used to justify open access to our information and even intrusive surveillance programs.
+      This rhetoric is **dangerous**.
 
-      This rhetoric is <!-- .element: class="delayed" -->**dangerous**.
+      This stance is often used to justify open access to our information and even intrusive surveillance programs.
 
-      <!-- .element: class="delayed" -->*Everyone* has information and interactions they would rather keep private.
+      *Everyone* has information and interactions they would rather keep private.
 
-      * <!-- .element: class="delayed" -->Medical records
-      * <!-- .element: class="delayed" -->Private conversations and photos with friends and family
-      * <!-- .element: class="delayed" -->Patterns of behaviour (shopping habits, search history)
+      * Personal information
+      * Medical records
+      * Private conversations and photos with friends and family
+      * Patterns of behaviour (shopping habits, search history)
 
-      <!-- .element: class="delayed" -->None of these are inherently bad, but can be recorded and exposed in a breach. It also leads to a slippery slope of what we allow to be recorded and tracked in our lives.
+      We also saw that even benign information can be used against us in password cracking and phishing attempts.
+      </script>
+    </section>
 
-      <!-- .element: class="delayed" -->Once the gate of privacy has been opened, it cannot be closed.
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+      # How is your data being used?
+
+        ```“If you’re not paying for it, you become the product”```
+
+        <!-- .element: class="centered-media" --> ![Selling Data](framework/img/workshop/selling_data.png)
+
+        Most “free” services make money off selling your personal information, photos, and behaviour patterns to advertisers and other companies.
+        </script>
+      </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+      # How is your data being used?
+
+      There have been many scandals involving data being sold without user consent or used for unintended purposes.
+
+      Companies may pay fines and make apologies, but these give little solace to the people whose privacy was violated.
+
+      There is now also precedent for data to be used in legal cases. The smart home device Alexa, which passively records parts of conversations, was subpoenaed in 2018 for a murder trial.
+
+      ---
+      ###Further Reading
+      * [2018 Facebook-Cambridge Analytica Data Scandal](https://www.theverge.com/2019/7/11/20690020/google-assistant-home-human-contractors-listening-recordings-vrt-nws)
+      * [Alexa subpoenaed in double homicide](https://www.vox.com/the-goods/2018/11/12/18089090/amazon-echo-alexa-smart-speaker-privacy-data)
+      * [Google Assistant accidental recordings, listened to by human contractors](https://www.theverge.com/2019/7/11/20690020/google-assistant-home-human-contractors-listening-recordings-vrt-nws)
       </script>
     </section>
 
     <section class="slide" data-markdown>
       <script type="text/template">
-      # Why is Privacy Important?
-
-      **2. What data is being collected how is being used?**
-
-      The 2018 Facebook-Cambridge Analytica Data Scandal demonstrated the abuse of trust that can take place with companies who collect personal data. The information was used without consent of the users and leveraged to shape political outcomes.
-
-      The companies received fines and made public apologies, but these gestures give little solace to the people who had their privacy violated.
-
-      Public social media posts can also be easily manipulated and framed in ways to spread misinformation and perform character assassinations.
-      <!-- .element: class="centered-media" --> ![Passwords](framework/img/workshop/pwchart.png)
-
-      <!-- .element: class="delayed" -->
+      # How is your data being used?
+      <!-- .element: class="centered-media" --> ![Reading the Terms of Service](framework/img/workshop/reading_tos.jpg)
       </script>
     </section>
 
     <section class="slide" data-markdown>
       <script type="text/template">
-      # Why is Privacy Important?
+      # Exercise 7: Check the Terms of Service (10 mins)
 
-      **3. Is your data being kept safe?**
+      It's important to know what you're signing up for, but it's not always easy to find out. Going through a website’s terms of service and privacy policies can be daunting, especially when they are long and full of legalese.
 
-      Let's say a company who collects your data promises to never use it for bad things.<!-- .element: class="delayed" -->
+      Fortunately, **Terms of Service; Didn’t Read** is an online project that aims to summarize the policies of major websites in a more digestible format.
+
+      With your group, visit **https://tosdr.org/** to have a look at some of your frequently used websites and services.
+
+      Pick one site and discuss the specific policies with your group
+
+      * Were you surprised by any of the conditions?
+      * Do any conditions make you feel uncomfortable?
+      * What are some implications of some of these policies?
+
+      </script>
+    </section>
+
+    <section class="slide" data-markdown>
+      <script type="text/template">
+      # Is your data being kept safe? Who else is accessing it?
+
+      Let's say a company who collects your data promises to never use it for bad things.
 
       **🙄**<!-- .element: class="delayed" -->
 
@@ -1277,54 +1589,9 @@
       </script>
     </section>
 
-    <section class="slide" data-markdown data-toc>
-      <script type="text/template">
-      # How data lives on the Internet
-
-      Once you put information out there, it is virtually impossible to remove.
-
-      It is copied, transferred, and shared almost instantaneously and remains out there forever.
-
-      **Doxxing** and **Social Engineering** hinge on the availability of information and makes password dictionary attacks and phishing attempts more effective.
-      </script>
-    </section>
-
     <section class="slide" data-markdown>
       <script type="text/template">
-      #Exercise: Doxxing
-
-      How easily can someone find information about you? Let's use a search engine like Google to see what we can find
-
-      1. Search for you name. Add quotes around your name for more precise results eg. “Harry Potter”
-
-      2. Based on the results that match you, scan the pages for more information like interests, social media nicknames, and places of work. Add these search terms to your name.
-
-        * “Harry Potter quidditch”
-        * “Harry Potter Hogwarts”
-        * “@hpotter”
-        * “The Boy Who Lived”
-
-      3. Repeat the process by adding any possible leads that come up
-      </script>
-    </section>
-
-    <section class="slide" data-markdown>
-      <script type="text/template">
-      # Doxxing
-
-      How much did you manage to uncover? How long did it take? Did it seem easy to do?
-
-      This information is all freely available to anyone who can access a search engine on the Internet. There are far more sophisticated methods available that can turn up even more information.
-
-      Large social media companies like Facebook can even construct **shadow profiles** for people who don’t even use their platform.
-
-      Data that other users upload is combined with publicly available information to infer details about non-users.
-      </script>
-    </section>
-
-    <section class="slide" data-markdown>
-      <script type="text/template">
-      # Is your data being protected?
+      # Optional Exercise: Is your data being protected?
 
       Even if you are ok with your data being bought and sold, you cannot be sure where else it could end up.
 
@@ -1335,7 +1602,7 @@
       * security flaw
       * hacked
 
-      Eg. “BMO data breach”, “WhatsApp hacked”, “Netflix security flaw”
+      Eg. “BMO data breach”, “WhatsApp hacked”, “Netflix security flaw”. What do you find?
 
       Once the data is out, there is no telling who can access it what can be done with it.
       </script>
@@ -1343,7 +1610,7 @@
 
     <section class="slide" data-markdown>
       <script type="text/template">
-      #  Have you already been pwned?
+      # Optional Exercise: Have you already been pwned?
 
       Data breaches regularly expose lists of passwords for websites and services.
 
@@ -1351,40 +1618,79 @@
 
       https://haveibeenpwned.com/
 
-      If you find that your account has been involved in a breach, it doesn't necessarily mean someone has broken into your account.
+      The website checks if your email can be found in any of the major data breaches.
 
-      Password databases are usually protected by additional security measures, but it’s never guaranteed. It's good practice to change your passwords if they're exposed in a breach.
+      It also has a listing for which sites have been breached and the type of data leaked: https://haveibeenpwned.com/PwnedWebsites
+
+      ---
+      ###Notes
+      * If you find that your account has been involved in a breach, it doesn't necessarily mean someone has broken into your account; a hacker usually still has to run a password cracking attempt.
+      * It's good practice to change your password if you haven't since the last breach
+      </script>
+    </section>
+
+    <section class="slide" data-markdown data-toc>
+      <script type="text/template">
+      # Is your data being kept safe? Who else is accessing it?
+        There's concern over what we want to keep private, but what about information we choose to make public on social media?
+
+        We've already seen that **doxxing** and **social engineering** hinge on the availability of information. Seemingly harmless data can enhance password dictionary attacks and phishing attempts.
       </script>
     </section>
 
     <section class="slide" data-markdown>
       <script type="text/template">
-      # What are you signing up for?
+        # Is your data being kept safe? Who else is accessing it?
+        Bad people are always finding new ways to use public information
 
-      ```“If you’re not paying for it, you become the product”```
+        * **Geotagged** posts reveal people's current locations, allowing burglars to target homes when people are away on vacation
+        * Fake bomb threats or cases of domestic abuse can be called on people's houses with addresses found online (aka SWATting)
+        * Doxxing can be done to expose the information to a wider audience, inviting bullying or extortion
 
-      <!-- .element: class="centered-media" --> ![Selling Data](framework/img/workshop/selling_data.png)
-
-      Most “free” services make money off selling your personal information, photos, and behaviour patterns to advertisers and other companies.
+        ---
+        ###Further Reading
+        * [Burglar targets Rihanna's home using social media](https://www.cnn.com/2018/10/03/entertainment/los-angeles-celebrity-homes-burglarized/index.html)
+        * Article on [Swatting](https://www.cnn.com/2019/03/30/us/swatting-what-is-explained/index.html)
+        * Article on [Doxxing](https://cyberbullying.org/doxing-and-cyberbullying)
       </script>
     </section>
 
     <section class="slide" data-markdown>
       <script type="text/template">
-      # What are you signing up for?
-      <!-- .element: class="centered-media" --> ![Reading the Terms of Service](framework/img/workshop/reading_tos.jpg)
+      #Exercise 9: Doxxing (10 minutes)
+
+      How easily can someone find information about you online?
+
+      1. Search for you name. Add quotes around your name for more precise results **eg. “Harry Potter”**
+
+      2. Based on the results that match you, scan the pages for more information like interests, social media nicknames, and places of work. Add these search terms to your name.
+
+        * **“Harry Potter quidditch”**
+        * **“Harry Potter Hogwarts”**
+        * **“@hpotter”**
+        * **"Harry Potter" + “The Boy Who Lived”**
+
+      3. Repeat the process by adding any possible leads that come up
+
+      ---
+      ###Resources
+      * [Information on more advanced search engine use](https://www.oakton.edu/user/2/rjtaylor/cis101/Google%20Hacking%20101.pdf)
       </script>
     </section>
 
     <section class="slide" data-markdown>
       <script type="text/template">
-      #Check the Terms of Service
+      # Doxxing
 
-      It can be daunting to go through a website’s terms of service and privacy policies, especially when they are long and full of legalese.
+      What did you manage to uncover? How long did it take? Was it hard to do?
 
-      Fortunately, **Terms of Service; Didn’t Read** is an online project that aims to summarize the policies of major websites in a more digestible format.
+      Anyone who can access a search engine on the Internet can also access this information. There are sophisticated methods and tools available that can turn up even more details.
 
-      Visit https://tosdr.org/ to have a look at some of your frequently used websites and services.
+      Large social media companies like Facebook have even constructed **shadow profiles** for people who don’t even use their platform. Data that other users upload is combined with publicly available information to infer details about non-users.
+
+      ---
+      ###Further Reading
+      * Article on [Shadow Profiles](https://techcrunch.com/2018/04/11/facebook-shadow-profiles-hearing-lujan-zuckerberg/)
       </script>
     </section>
 
@@ -1394,15 +1700,14 @@
 
       We don’t have to be afraid to use the Internet. However there are some precautions that can keep you safer.
 
-      **Think twice before signing up**
+      ##Think twice before signing up##
 
-      Carefully consider if you really need a service. What sort of information could they collect and what could they be using it for? Every different site is another potential place that can expose or sell your data.
+      * Carefully consider if you really need a service. What sort of information could they collect and what could they be using it for? Every site is another potential place that can expose or sell your data.
 
-      This point is especially important for children as they are vulnerable and may not understand the risks.
+      ##Tighten your share settings and permissions
 
-      **Tighten your share settings and permissions**
-
-      Most websites and services give options to adjust what information you make public and what information is collected. Do a search for the service and “privacy settings” and you should find specific instructions.
+      * Most websites and services give options to adjust what information you make public and what information is collected. These options are usually found in the Settings, Preferences, or Profile of the app
+      * If you are unsure, search for the service name and “privacy settings” on a search engine
       </script>
     </section>
 
@@ -1410,19 +1715,18 @@
       <script type="text/template">
       # Reducing your digital footprint
 
-      **Think before you post**
+      ##Think before you post
 
-      "Anything you say can and will be used against you"
+      * "Anything you say can and will be used against you"
+      * Be aware of who can view your public posts or photos. Deleting content after the fact doesn’t guarantee it is fully removed (though it can help).
 
-      Always remember that once a post is made it is out there forever. Deleting posts after the fact doesn’t guarantee it is fully removed.
+      ##Delete old accounts you don’t use anymore
 
-      **Delete old accounts you don’t use anymore**
+      * Getting rid of unused accounts reduces the number of places your information could be searched or exposed
 
-      Getting rid of unused accounts can limit the amount of information someone can find and also reduces the chance of your information being exposed in a data breach.
+      ##Use alternate emails for different services
 
-      **Use alternate emails for different services**
-
-      Using multiple email accounts for different groups of services can help spread your information profile around and make it more difficult to pinpoint information back to you after a data leak. A password manager is helpful in managing these accounts.
+      * Using multiple email accounts for different groups of services can make it more difficult to pinpoint information back to you after a data leak. A password manager is helpful in managing these accounts.
       </script>
     </section>
 
@@ -1432,8 +1736,29 @@
       <script type="text/template">
       #Other Tools and Advice
 
-      Consider Switching Services
-      Many popular services sell your data and/or don’t prioritize your privacy. You may want to try some different options
+      ##Consider Switching Services
+      Many popular services may sell your data and/or don’t prioritize your privacy. You may want to try some different options
+
+      ---
+
+      ## Google (search engine)
+      * DuckDuckGo https://duckduckgo.com/
+
+      ## Gmail (email)
+      * ProtonMail (https://protonmail.com/)
+      * FastMail (https://www.fastmail.com/)
+
+      ## Chrome (Browser)
+      * FireFox (https://www.mozilla.org/firefox/)
+      * Brave (https://brave.com/)
+
+      ## FB Messenger (Chat)
+      * Signal (https://signal.org/)
+      * Telegram (https://telegram.org/)
+
+      ---
+
+      More alternatives can be found at https://www.reddit.com/r/degoogle/wiki/index
 
       </script>
     </section>
@@ -1442,12 +1767,12 @@
       <script type="text/template">
       # Other Tools and Advice
 
-      Install an Ad Blocker in your browser
-      Ads are not only annoying, but they also track your behaviour on websites.
-      Try uBlock Origin and Adblock Plus (make sure to search for these exact terms as there are many fakes). Ad blockers also have the extra benefits of improving website speed and reducing data usage.
+      ##Install an Ad Blocker in your browser
+      * Ads are not only annoying, but they also track your behaviour on websites.
+      * Try uBlock Origin and Adblock Plus (search for these exact terms as there are many fakes). Ad blockers also have the extra benefits of improving website speed and reducing data usage.
 
-      Use Private Browsing or Incognito Mode
-      Most browsers have a private or incognito mode, which reduces the amount of tracking that can be done. Private Browsing doesn’t prevent all tracking and if you’re signed into an account, your activity on that website can still be tracked.
+      ##Use Private Browsing or Incognito Mode
+      * Most browsers have a private or incognito mode, which reduces the amount of tracking that can be done. Private Browsing doesn’t prevent all tracking and if you’re signed into an account, your activity on that website can still be monitored.
       </script>
     </section>
 
@@ -1455,15 +1780,15 @@
       <script type="text/template">
       # Other Privacy Advice and Tools
 
-      Use a Virtual Private Network (VPN)
-      VPNs are tools that help keep your Internet activity secure and safe from tracking. They are especially helpful if you are using public WiFi networks that you are not sure are safe. However like with private browsing, a website can still track your activity if you sign in. Avoid using free VPNs as they often end up selling data to make up operation costs.
+      ##Use a Virtual Private Network (VPN)
+      * VPNs are tools that help keep your Internet activity secure and safe from tracking
+      * They are especially helpful if you are using public WiFi networks that you are not sure are safe
+      * Like with private browsing, a website can still track your activity if you sign in
+      * Avoid using free VPNs as they often end up selling data to make up operation costs.
 
-      Using these tools do not guarantee 100% safety, but they can greatly improve your online privacy. Always do your research and read reviews before choosing a tool.
+      Always do your research and read reviews before choosing a tool or service.
 
-
-      <!-- .element: class="delayed" -->
-
-      <!-- .element: class="delayed centered-media" --> ![Eavesdrop](framework/img/workshop/eavesdrop.jpg)
+      Nothing can guarantee 100% safety, but taking some of these steps can greatly improve your online privacy.
       </script>
     </section>
 
@@ -1475,59 +1800,9 @@
 
       However, we must remember that this technology has had an immensely positive impact on our lives.
 
-      Cars cause accidents and create pollution, but that doesn’t mean we should be afraid of driving.
+      Cars may cause accidents and create pollution, but that doesn’t mean we should be afraid of driving. Cars have changed our world for the better and given us a freedom of movement we didn't have before.
 
       Just remember to check your mirrors, buckle up, and enjoy the ride.
-      </script>
-    </section>
-
-    <section class="slide" data-markdown>
-      <script type="text/template">
-      #
-
-      <!-- .element: class="delayed" -->
-
-      <!-- .element: class="delayed centered-media" --> ![Eavesdrop](framework/img/workshop/eavesdrop.jpg)
-      </script>
-    </section>
-
-    <section class="slide" data-markdown>
-      <script type="text/template">
-      #
-
-      <!-- .element: class="delayed" -->
-
-      <!-- .element: class="delayed centered-media" --> ![Eavesdrop](framework/img/workshop/eavesdrop.jpg)
-      </script>
-    </section>
-
-    <section class="slide" data-markdown>
-      <script type="text/template">
-      #
-
-      <!-- .element: class="delayed" -->
-
-      <!-- .element: class="delayed centered-media" --> ![Eavesdrop](framework/img/workshop/eavesdrop.jpg)
-      </script>
-    </section>
-
-    <section class="slide" data-markdown>
-      <script type="text/template">
-      #
-
-      <!-- .element: class="delayed" -->
-
-      <!-- .element: class="delayed centered-media" --> ![Eavesdrop](framework/img/workshop/eavesdrop.jpg)
-      </script>
-    </section>
-
-    <section class="slide" data-markdown>
-      <script type="text/template">
-      #
-
-      <!-- .element: class="delayed" -->
-
-      <!-- .element: class="delayed centered-media" --> ![Eavesdrop](framework/img/workshop/eavesdrop.jpg)
       </script>
     </section>
 
@@ -1545,18 +1820,18 @@
     <section class="slide last">
       <h1>Thank you!</h1>
       <h2 class="heading-bg">
-        <span>Title of Workshop<br>Second line</span>
+        <span>Digital Safety and Privacy</span>
       </h2>
 
       <img class="instructor" src="http://cl.ly/image/0r3Q3H110G36/profile-generic.jpg" alt="instructor name">
-      <h2><span class="cursive">with</span> Instructor Name</h2>
+      <h2><span class="cursive">with</span> </h2>
       <ul>
-        <li><a href="mailto:">hello@email.com</a></li>
-        <li><a href="#">mywebsite.com</a></li>
-        <li><a href="http://twitter.com/">@twitter</a></li>
+        <li><a href="mailto:"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="http://twitter.com/"></a></li>
       </ul>
 
-      <p class="attribution">Slide presentation created by <a href="http://christinatruong.com">Christina Truong</a> based on <a href="https://github.com/LeaVerou/csss">Lea Verou's SlideShow</a> and <a href="http://lab.hakim.se/reveal-js/">reveal.js</a>.</p>
+      <p class="attribution">Slide presentation created by AC</a> based on <a href="https://github.com/LeaVerou/csss">Lea Verou's SlideShow</a> and <a href="http://lab.hakim.se/reveal-js/">reveal.js</a>.</p>
     </section>
 
   </main><!-- cls main section -->
