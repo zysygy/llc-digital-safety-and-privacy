@@ -118,14 +118,14 @@
 
         Computers and the Internet play a huge role in our lives. They let us conveniently do work, keep in touch, and have fun.
 
-        However, we should be aware of the digital dangers. Consider what could go wrong when:
+        However, we should be aware of the online threats. Consider what could go wrong when:
 
         * **Banking online and transferring money**
         * **Sending emails and sharing files**
         * **Chatting and using social media**
         * **Installing smart devices in your home**
 
-        To understand the possible perils, let's learn to **think like a hacker.**
+        To understand the risks, let's learn to **think like a hacker.**
       </script>
     </section>
 
@@ -178,6 +178,12 @@
       For these hackers, their ability to exploit and break into systems is tied their livelihood. Thus, they will use whatever methods and resources available to achieve their goals.
 
       In some cases they are supported by well-funded criminal organizations or even nation states.
+
+      ---
+
+      ###Notes
+      * **Black Hat Hackers** are criminals who mean to do you harm
+      * On the other side, **White Hat Hackers** help organizations understand their security risks and fix them
       </script>
     </section>
 
@@ -185,11 +191,11 @@
       <script type="text/template">
       # Security and Privacy VS Convenience
 
-      We must accept that there are always **trade-offs between security and covenience**. The more secure we want to be, the more we'll have to work to keep ourselves safe.
+      We must accept that there are always **trade-offs between security and covenience**.
 
-      This workshop aims to explain both the risks and consequences of technology as well as the security measures we can take to protect ourselves.
+      A little effort can go a long way, and the best strategy is one you'll actually follow.
 
-      A little effort can go a long way, but it is up to you to decide what level of security you are comfortable with.
+      This workshop will highlight online threats, provide options to protect against them, and describe the trade-offs so you can decide which ones are right for you.
       </script>
     </section>
 
@@ -238,7 +244,7 @@
       <script type="text/template">
       #  The Problems with Passwords
 
-      What are some of the troubling trends that arise from poorly managed passwords?
+      What are some of bad habits that people have developed to manage passwords?
 
       * Password Sharing
       * Password Exposure
@@ -272,11 +278,11 @@
       <script type="text/template">
       #  Password Exposure
 
-      With so many passwords to remember, people resort to writing down their passwords on a pad of paper or typing them into a text file on their computer.
+      With so many passwords to remember, people resort to writing them down or typing them into a text file on their computer.
 
       <!-- .element: class="centered-media" --> ![Notepad](framework/img/workshop/notepad.jpg)
 
-      Despite how well you think you can hide passwords stored in these ways, they can be easily discovered or stolen. You can never be sure who can find them.
+      People who record passwords this way choose convenience, which makes them vulnerable to exposure. You can never be sure who can find them.
 
       ---
       ###Further Reading
@@ -336,15 +342,15 @@
       <script type="text/template">
       #  Exercise 2: How strong are your passwords? (5 minutes)
 
-      Let's check the strength of the password you made earlier with a tool
+      Check the strength of the password you made earlier with a tool
 
       > Visit https://www.roboform.com/how-secure-is-my-password
 
-      If you password is labeled as weak or medium, try making some adjustments to it until it's at least good.
+      **As a rule, don't type any real passwords into sites you don't trust.**
 
-      Write down this modified version of your password.
+      How strong is your password?
+
       ---
-
       Offline Version (harder to read and use, but much more detailed)
 
       >In the workshop files, go into the **password_checker** folder and then open **zxcvbn_Password_Checker**
@@ -361,9 +367,9 @@
 
       <!-- .element: style="width:50%;float:right;margin-left:5px" --> ![Passwords](framework/img/workshop/pwchart.png)
 
-      A password’s job is to only allow the right person access something.
+      A good password is something that only you should know.
 
-      Thus, a password should be **hard for someone else to guess**, but **easy for you to remember**.
+      Thus, a password should be **hard for someone else to guess**, and **easy for you to remember**.
 
       Unfortunately, many passwords fall on the left side of this chart
       </script>
@@ -381,11 +387,11 @@
       <script type="text/template">
       # Password Cracking
 
-      What makes a password easy to guess? How do hackers even do the guessing?
+      What makes a password easy to guess? How do hackers even "guess" the passwords?
 
       Let’s learn about the actual methods hackers use to crack passwords and determine what could make it more difficult for them.
 
-      Password cracking and security is a fasincating and complex topic deserving its own workshop.
+      Password cracking and storage are fasincating and complex topics deserving their own workshops.
 
       We'll be focusing only on the basic ideas in these slides, but additional resources will be linked for those interested in learning more.
 
@@ -409,7 +415,7 @@
 
       A lot of password security boils down to *delaying the inevitable*. A brute force attack can eventually check every password combination.
 
-      To understand our chances against brute force, we need to know the number of possible password combinations and speed that computers can guess passwords.
+      To understand our chances against brute force, we need to know the number of possible password combinations and the speed that computers can guess passwords.
       </script>
     </section>
 
@@ -459,16 +465,16 @@
 
       <!-- .element: style="max-width:40%;float:right;margin-left:5px;margin-top:-2%;padding:2px" -->![Typing Cat](framework/img/workshop/typing_cat.gif)
 
-      A person could probably try a dozen combinations in a minute and maybe several thousand in a day.
+      A human can guess about a dozen combinations per minute and maybe several thousand per day.
 
-      Computers are way faster at performing repetitive tasks than humans are, making them perfect for brute force guessing passwords.
+      Computers are **way** faster at doing this, making them perfect for brute force guessing passwords.
 
       Let's do an analysis to see just how quick they are.
 
       <!-- .element: style="clear:both" -->The rate at which computers guess passwords depends on two main factors:
 
       * **Computing power of the device**
-      * **How the password is processed<sup>1</sup>**
+      * **How the password is stored<sup>1</sup>**
 
       ---
       ###Further Reading
@@ -658,10 +664,10 @@
           The last column is the <strong>maximum time</strong> it would take to crack a password. On average, it would take about half as much time and even less with more advanced logic.
         </li>
         <li>
-          The password processing method used in our calculations is called <strong>SHA-1</strong>, which is widely used. In case you want to know how it works, here's an <a href="https://brilliant.org/wiki/secure-hashing-algorithms/">article</a> with details.
+          The password processing method used in our calculations is called <strong>SHA-1</strong>, which was widely used, including by companies such as LinkedIn. Here's an <a href="https://brilliant.org/wiki/secure-hashing-algorithms/">article</a> about SHA-1 and hashing.
         </li>
         <li>
-          Some websites will rate limit the number of tries you can make, but not all do. Hackers also commonly bypass this safeguard using an <strong>offline attack</strong>, which attempts to crack leaked password hashes.
+          Some websites will rate limit the number of tries you can make, but not all do. Hackers also commonly bypass this safeguard using an <strong>offline attack</strong>, which is performed against leaked password hashes, not the actual website.
         </li>
       </ul>
     </section>
@@ -700,7 +706,7 @@
 
       If your previous one was 10+ characters long, make another password.
 
-      **Remember to not use any real passwords you've used before!**
+      **Remember to not use any real passwords!**
       </script>
     </section>
 
@@ -708,11 +714,11 @@
       <script type="text/template">
       # Withstanding Brute Force
 
-      When it comes to protecting yourself brute force, the most important tip is to **make passwords longer.**
+      When it comes to protecting yourself from brute force cracking, the most important tip is to **make passwords longer.**
 
       But is this enough? <!-- .element: class="delayed" -->
 
-      What if instead of testing every single combination of letters, numbers, and symbols a hacker could narrow down the number of passwords that need to be checked? <!-- .element: class="delayed" -->
+      What if instead of testing every single combination of letters, numbers, and symbols a hacker could narrow down the number of passwords that they need to check? <!-- .element: class="delayed" -->
 
       <!-- .element: class="delayed centered-media" -->![Password Hacking](framework/img/workshop/password_hacking.jpg)
 
@@ -737,16 +743,19 @@
       </script>
     </section>
 
+    <!--todo twocol list, 10 ten, add source-->
+
     <section class="slide" data-markdown>
       <script type="text/template">
       # Composing a Dictionary
 
-      Hackers generate a **dictionary** of likely password candidates by analyzing trends in existing data breaches. They use this dictionary to run their password guessing attempts.
+      Hackers generate a **dictionary** of likely password candidates by analyzing trends in existing data breaches. They use this dictionary to guide their password guessing attack.
 
       Some common elements and patterns found in data breaches include:
 
       * Names - **johnsmith**
       * Keyboard patterns - **qwerty**
+      * Hobbies and interests - **baseball**
       * Website names - **myfacebookpassword**
       * Common words and phrases - **iloveyou**
       * Famous characters or places - **superman**
@@ -774,7 +783,7 @@
       ---
       ###Notes
       * It's hard to say exactly how much faster a dictionary attack is compared to brute force. It depends on the predictability of the password and hackers are constantly improving their methods.
-      * Since Dictionary attacks are so much more effective, plain brute force is used more of a fallback option.
+      * Since Dictionary attacks are so much more effective, plain brute force is rarely used except as a fallback.
 
       </script>
     </section>
@@ -817,7 +826,7 @@
 
       * What were some of the worst passwords in each group?
       * Were there any interesting clues?
-      * What advice would you give advice to your friends and family about passwords?
+      * What advice would you give to your friends and family about passwords?
       </script>
     </section>
 
@@ -829,7 +838,7 @@
 
       <!-- .element: class="centered-media" --> ![Password Overload](framework/img/workshop/overload.jpg)
 
-      What can we do about our passwords?
+      Is there a better way to overcome these problems?
       </script>
     </section>
 
