@@ -171,11 +171,11 @@
       <script type="text/template">
       # Why do hackers hack?
 
-      Hackers are sometimes portrayed as hooded figures causing a bit of mischief. However, they are a threat that need to be taken seriously.
+      Hackers are sometimes portrayed as hooded figures causing a bit of mischief. However, they are serious threat.
 
       While some hackers hack for the challenge or to cause mayhem, many treat the activity as their **job**.
 
-      For these hackers, the ability to exploit and break into systems is tied their livelihood. Thus, they will use whatever resources available to achieve their goals.
+      For these hackers, their ability to exploit and break into systems is tied their livelihood. Thus, they will use whatever methods and resources available to achieve their goals.
 
       In some cases they are supported by well-funded criminal organizations or even nation states.
       </script>
@@ -208,7 +208,7 @@
 
       On a small sheet of paper, write down a password you might use to sign up for a **your**Space account.
 
-      You have some password rules. You might have seem rules like these elsewhere
+      There are some password rules. You've probably seen rules like these before
       > * Your password has to be at least 6 characters long
       > * Must contain at least one lower case letter
       > * one upper case letter
@@ -230,7 +230,7 @@
 
       On average, a person has **40 accounts** registered with their primary email address.
 
-      With so many credentials to remember, often with cumbersome rules, people have developed bad habits and misconceptions when it comes to their passwords.
+      With so many credentials to remember, often with cumbersome rules, people have developed bad habits when it comes to their passwords.
       </script>
     </section>
 
@@ -245,7 +245,7 @@
       * Password Reuse
       * Weak and Complicated Passwords
 
-      Some of these may seem obvious, but not everyone understands the consequences.
+      Some of these may seem obvious, but it's important to understand the reasons why.
 
       We'll see later how a tool called a  <!-- .element: class="delayed" --> **Password Manager** can us avoid these issues.
       </script>
@@ -257,7 +257,7 @@
 
       <!-- .element: style="width:50%;float:right;margin-left:5px" -->![Whisper](framework/img/workshop/whisper.jpg)
 
-      Even if you think you can trust someone with your password, can you also trust them to never share it with someone else?
+      Even if you think you can trust someone with your password (can you really?), can you also trust them to never share it with someone else?
 
       Many cases of compromised accounts are due to people carelessly sharing their passwords.
 
@@ -276,7 +276,11 @@
 
       <!-- .element: class="centered-media" --> ![Notepad](framework/img/workshop/notepad.jpg)
 
-      Despite how well you think you can hide passwords stored in these ways, they can be easily discovered or stolen.
+      Despite how well you think you can hide passwords stored in these ways, they can be easily discovered or stolen. You can never be sure who can find them.
+
+      ---
+      ###Further Reading
+      [TV network hacked after broadcasting passwords on sticky notes](https://arstechnica.com/information-technology/2015/04/hacked-french-network-exposed-its-own-passwords-during-tv-interview/)
       </script>
     </section>
 
@@ -328,7 +332,7 @@
       </script>
     </section>
 
-    <section class="slide" data-markdown data-toc>
+    <section class="slide" data-markdown>
       <script type="text/template">
       #  Exercise 2: How strong are your passwords? (5 minutes)
 
@@ -339,24 +343,15 @@
       If you password is labeled as weak or medium, try making some adjustments to it until it's at least good.
 
       Write down this modified version of your password.
-
-
       ---
 
       Offline Version (harder to read and use, but much more detailed)
 
       >In the workshop files, go into the **password_checker** folder and then open **zxcvbn_Password_Checker**
 
-      </script>
-    </section>
-
-    <section class="slide" data-markdown>
-      <script type="text/template">
-        #Password Strength Checkers
-
-        Password strength tools are not perfect should be treated only as a baseline assessment.
-
-        In other words, the suggested strength or crack time is the maximum amount of time it would take to crack a password, **but it may take less time**. Hacking methods are sophisticated and constantly improving.
+      ---
+      ###Notes
+      * Password strength checkers aren't 100% accurate, but if they say your password is weak, it's worth making a change!
       </script>
     </section>
 
@@ -366,7 +361,9 @@
 
       <!-- .element: style="width:50%;float:right;margin-left:5px" --> ![Passwords](framework/img/workshop/pwchart.png)
 
-      A password’s job is to only allow the right person access something. Thus, a password should be **hard for someone else to guess**, but **easy for you to remember**.
+      A password’s job is to only allow the right person access something.
+
+      Thus, a password should be **hard for someone else to guess**, but **easy for you to remember**.
 
       Unfortunately, many passwords fall on the left side of this chart
       </script>
@@ -386,11 +383,15 @@
 
       What makes a password easy to guess? How do hackers even do the guessing?
 
-      Let’s learn about the actual methods hackers use to figure out passwords and determine what could make it more difficult for them.
+      Let’s learn about the actual methods hackers use to crack passwords and determine what could make it more difficult for them.
 
       Password cracking and security is a fasincating and complex topic deserving its own workshop.
 
       We'll be focusing only on the basic ideas in these slides, but additional resources will be linked for those interested in learning more.
+
+      ---
+      ###Notes
+      * Keep in mind, hackers only need to crack your password if there isn't already an easier way steal them! That's why the previous concepts are so important.
 
       </script>
     </section>
@@ -424,7 +425,9 @@
       > * one digit
       > * one symbol ~!@#$%^&*()_+
 
-      How many possible combinations could exist with these rules?
+      Many people use the minimum required length specified for guidelines. Check your password from Exercise 1!
+
+      If a hacker wants to find a password under these rules, how many combinations would they need to try to find it?
 
       </script>
     </section>
@@ -458,7 +461,7 @@
 
       A person could probably try a dozen combinations in a minute and maybe several thousand in a day.
 
-      Computers are way faster at performing repetitive tasks than humans are, making them perfect for brute forcing passwords.
+      Computers are way faster at performing repetitive tasks than humans are, making them perfect for brute force guessing passwords.
 
       Let's do an analysis to see just how quick they are.
 
@@ -525,7 +528,6 @@
     </section>
 
     <section class="slide">
-
       <style>
         table {
           width: 100%;
@@ -540,7 +542,6 @@
         td {
           font-size: 80%;
         }
-
         .pw-len {
           font-size:75%;
           font-weight:bold;
@@ -563,7 +564,7 @@
       <table>
         <thead>
           <tr>
-            <th>Password Type</th><th>Password Ex.</th><th>Total Combinations</th><th>Max Time to Crack <br> (2B guesses/sec)</th>
+            <th>Password Type</th><th>Example</th><th>Total Combinations</th><th>Max Time to Crack <br> (2B guesses/sec)</th>
           </tr>
         </thead>
 
@@ -657,7 +658,7 @@
           The last column is the <strong>maximum time</strong> it would take to crack a password. On average, it would take about half as much time and even less with more advanced logic.
         </li>
         <li>
-          The password processing method used in our calculations is called <strong>SHA-1</strong>, which is widely used. You don't need to know how it works, but here's an <a href="https://brilliant.org/wiki/secure-hashing-algorithms/">article</a> with details.
+          The password processing method used in our calculations is called <strong>SHA-1</strong>, which is widely used. In case you want to know how it works, here's an <a href="https://brilliant.org/wiki/secure-hashing-algorithms/">article</a> with details.
         </li>
         <li>
           Some websites will rate limit the number of tries you can make, but not all do. Hackers also commonly bypass this safeguard using an <strong>offline attack</strong>, which attempts to crack leaked password hashes.
@@ -713,6 +714,8 @@
 
       What if instead of testing every single combination of letters, numbers, and symbols a hacker could narrow down the number of passwords that need to be checked? <!-- .element: class="delayed" -->
 
+      <!-- .element: class="delayed centered-media" -->![Password Hacking](framework/img/workshop/password_hacking.jpg)
+
       </script>
     </section>
 
@@ -756,7 +759,7 @@
       <script type="text/template">
       # Composing a Dictionary
 
-      Simply adding symbols and numbers often doesn't add much difficulty for cracking since people are predictable in how they add them to their passwords.
+      Simply adding symbols and numbers doesn't add much difficulty for cracking since people are predictable in how they add them to their passwords.
 
       Here are some common ways people make variations on **"password"**:
 
@@ -764,7 +767,7 @@
       * Adding years to the beginning or end - **password1982** (12 chars long)
       * Common substitutions, word additions - **NetflixP@ssW0rD** (15 chars long)
 
-      These extra variations can be easily programmed by the hacker into their password cracking software.
+      These predictable variations can be easily programmed by the hacker into their password cracking software.
 
       Remember, these variations can be guessed at a rate of **2 billion/second** with only $400 worth of computing power!
 
@@ -917,6 +920,10 @@
         * <!-- .element: class="delayed" -->Enter passwords in some places like signing into a computer
         * <!-- .element: class="delayed" -->Protect against breaches on the website or service itself (though having unique passwords for each site mitigates the impact)
         * <!-- .element: class="delayed" -->Protect against **keyloggers**, which are malicious programs that record what you type. More on these later!
+
+        ---
+        ###Notes
+        * Using a password manager does create a single but strong point of failure. the alternative is creating many weak points of failure by having weak passwords.
       </script>
     </section>
 
@@ -977,10 +984,10 @@
         * Adjective ("Muddy", "Boisterous")
         * Animal that you wouldn't find on a farm, plural ("Geckos", "Giant Squids")
         * Verb, past tense ("Ran", "Dropped")
-        * Colour ("Mauve, Sky Blue")
-        * Nationality or material ("Dutch, Suede")
-        * Brand name or store ("Nike, McDonalds")
-        * Something you would buy as a gift ("Flowers, Card")
+        * Colour ("Mauve", "Sky Blue")
+        * Nationality or material ("Dutch", "Suede")
+        * Brand name or store ("Nike", "McDonalds")
+        * Something you would buy as a gift ("Flowers", "Card")
       </script>
     </section>
 
@@ -1003,7 +1010,7 @@
 
       eg. Teal Cuban Gucci Chocolate
 
-      Play around with different combinations. It doesn't have to make sense; the sillier the better! Try to imagine these in your head.
+      Play around with different combinations or come up with your own templates. It doesn't have to make sense; the sillier the better! Try to imagine these in your head.
       </script>
     </section>
 
@@ -1033,11 +1040,11 @@
       ##Is it long enough to resist raw brute force?
       A 27 character password takes up to <!-- .element: class="delayed" -->10<sup>31</sup> years to crack with raw brute force!
 
-      ##Is this a commonly used password?
-      This phrase is unique and won’t be found in a dictionary of common passwords<!-- .element: class="delayed" -->
+      ##Is this a commonly used password or predictable?
+      This phrase is unique and won’t be found in a dictionary of common passwords.<!-- .element: class="delayed" -->
 
       ##Are there any personally relatable terms?
-      Probably not unless you’re a known tiny hippo enthusiast<!-- .element: class="delayed" -->
+      Probably not unless you’re a known tiny hippo enthusiast.<!-- .element: class="delayed" -->
 
       ##Does it exist somewhere that can be searched? <!-- .element: class="delayed" -->
       <!-- .element: class="delayed" -->**Yes!** You can find this password on these slides. Remember not to use this specific password - it is just an example!
@@ -1326,8 +1333,8 @@
 
       * <!-- .element: class="delayed" -->**Mimicking logos, images, and even full websites.**
       * <!-- .element: class="delayed" -->**Faking sender email addresses (aka Spoofing)**. Even internal corporate email addresses can be spoofed.
-      * <!-- .element: class="delayed" -->**Imitating compositional style** in emails to make messages seem more genuine
-      * <!-- .element: class="delayed" -->**Digitally Certified websites.** The little lock symbol you see beside the URL in your browser once
+      * <!-- .element: class="delayed" -->**Imitating compositional style** in emails to make messages seem more genuine.
+      * <!-- .element: class="delayed" -->**Digitally Certified websites.** The little lock symbol can beside a website URL can mislead people into thinking it's safe.
 
       ##Optional Exericse: Take a Second Look<!-- .element: class="delayed" -->
 
@@ -1687,9 +1694,9 @@
       <script type="text/template">
       #Exercise 9: Doxxing (10 minutes)
 
-      How easily can someone find information about you online?
+      How much can you find out about yourself online?
 
-      1. Search for you name. Add quotes around your name for more precise results **eg. “Harry Potter”**
+      1. Search for your name. Add quotes around your name for more precise results **eg. “Harry Potter”**
 
       2. Based on the results that match you, scan the pages for more information like interests, social media nicknames, and places of work. Add these search terms to your name.
 
@@ -1758,50 +1765,9 @@
       </script>
     </section>
 
-
-
-    <section class="slide" data-markdown data-toc>
-      <script type="text/template">
-      #Other Tools and Advice
-
-
-
-      ---
-
-      ## Google (search engine)
-      * DuckDuckGo https://duckduckgo.com/
-
-      ## Gmail (email)
-      * ProtonMail (https://protonmail.com/)
-      * FastMail (https://www.fastmail.com/)
-
-      ## Chrome (Browser)
-      * FireFox (https://www.mozilla.org/firefox/)
-      * Brave (https://brave.com/)
-
-      ## FB Messenger (Chat)
-      * Signal (https://signal.org/)
-      * Telegram (https://telegram.org/)
-
-      ---
-
-      More alternatives can be found at https://www.reddit.com/r/degoogle/wiki/index
-
-      </script>
-    </section>
-
-    <section class="slide">
+    <section class="slide service_table">
       <style>
-        table {
-          width: 100%;
-          font-size:90%;
-        }
-        thead tr th{
-          background-color: #b1009a;
-          color: white;
-          text-align: center;
-        }
-        td {
+        .service_table td {
           font-size: 80%;
           text-align:left;
         }
