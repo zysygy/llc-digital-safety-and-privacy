@@ -272,8 +272,6 @@
       </script>
     </section>
 
-    <!-- todo Instructor note, ask class if anyone showed their password to anyone else-->
-
     <section class="slide" data-markdown>
       <script type="text/template">
       #  Password Exposure
@@ -289,8 +287,6 @@
       [TV network hacked after broadcasting passwords on sticky notes](https://arstechnica.com/information-technology/2015/04/hacked-french-network-exposed-its-own-passwords-during-tv-interview/)
       </script>
     </section>
-
-    <!-- todo Instructor note, make it ok that people wrote a password down for the exercise-->
 
     <section class="slide" data-markdown>
       <script type="text/template">
@@ -334,7 +330,9 @@
 
       Which of these do you think was exposed as Facebook CEO Mark Zuckerberg's LinkedIn password?
 
-      <!-- todo: source  -->
+      ---
+      ###Further Reading
+      * [Hackers expose Mark Zuckerberg's password](https://www.vanityfair.com/news/2016/06/mark-zuckerberg-terrible-password-revealed-in-hack)
       </script>
     </section>
 
@@ -725,7 +723,7 @@
       </script>
     </section>
 
-    <section class="slide" data-markdown>
+    <section class="slide two-col-list" data-markdown>
       <script type="text/template">
       # Dictionary Attack
 
@@ -733,17 +731,29 @@
 
       Hackers don’t have to check every combination because people are not good at being random. Most people use common words, phrases, and other predictable terms for their passwords.
 
-      Here’s a list of the top 5 most common passwords (exposed in data breaches)
+      Here's are some passwords frequently found in data breaches
 
-      1. 123456
-      2. 123456789
-      3. qwerty
-      4. password
-      5. 111111
+      * 2018:
+        * 123456
+        * password
+        * 111111
+        * abc123
+        * iloveyou
+        * qwerty
+      * ...
+        * princess
+        * admin
+        * football
+        * !@#$%^&
+        * monkey
+        * charlie
+
+        ---
+        ###Resource
+        * [List of most commonly used passwords](https://en.wikipedia.org/wiki/List_of_the_most_common_passwords)
+
       </script>
     </section>
-
-    <!--todo twocol list, 10 ten, add source-->
 
     <section class="slide" data-markdown>
       <script type="text/template">
@@ -850,7 +860,7 @@
 
       **Password managers** are tools that help generate secure passwords for all of your different accounts and then safely store them for you.
 
-      The password manager can alleviate most of the burden in managing your credentials and even help you login automatically, making them quite convenient.
+      They alleviate most of the burden of managing your passwords and even help you login automatically, making them quite convenient.
       </script>
     </section>
 
@@ -860,18 +870,20 @@
 
       <!-- .element: style="max-width:50%;float:right;padding-left:5%" --> ![Password Manager](framework/img/workshop/pw-manager.png)
 
-      1. A person comes up with a strong Master Password to remember.
+      1. The user creates a single strong password, known as the *master password*.
 
-      2. The manager helps generate and store secure passwords in a protected Password Database.
+      2. The user installs the password manager on their devices.
 
-      3. The person installs the password manager onto their devices. Each device will be able to access database.
+      3. The tool creates a place to securely store passwords<sup>1</sup>, which is unlocked with the master password.
 
-      4. The Password database is unlocked with the master password.
+      4. The user either creates new passwords or imports existing passwords<sup>2</sup> and the tool securely stores them.
 
-      5. The password manager automatically fills in the right credentials when signing in to a website.
+      5. When the user goes to a website, the password automatically fills in their login information.
 
       ---
-      ###Resources
+      ###Notes
+      1. The secure storage is protected by [**Encryption**](https://slate.com/technology/2015/02/what-is-encryption-a-nontechnical-guide-to-protecting-your-digital-communications.html)
+      2. You should change your imported passwords if not strong
       [Image Credit](https://pixelprivacy.com/password-managers/)
       </script>
     </section>
@@ -880,13 +892,13 @@
       <script type="text/template">
       # Picking a Password Manager
 
-      It is important to pick a reputable and trusted password manager. Some lesser known free ones are fakes that try to steal your information!
+      It is important to pick a reputable password manager. There are many fake password managers, most of which are free, that steal your information!
 
       We recommend **LastPass**: https://www.lastpass.com/
 
-      It is free to use and works on most browsers and devices. The paid version comes with some nice extra features, but aren't necessary for the average person.
+      It is free to use and works on most browsers and devices. The paid version comes with some nice extra features, but they aren't necessary for the average person.
 
-      Here are some other options you can try. You should always do some research to pick the option that suits you best:
+      Here are some reputable alternatives also to consider:
 
       * **1Password:** https://1password.com/
       * **Dashlane:** https://www.dashlane.com/
@@ -928,11 +940,6 @@
         * <!-- .element: class="delayed" -->Be accessed if you ever forget your master password
         * <!-- .element: class="delayed" -->Enter passwords in some places like signing into a computer
         * <!-- .element: class="delayed" -->Protect against breaches on the website or service itself (though having unique passwords for each site mitigates the impact)
-        * <!-- .element: class="delayed" -->Protect against **keyloggers**, which are malicious programs that record what you type. More on these later!
-
-        ---
-        ###Notes
-        * Using a password manager does create a single but strong point of failure. the alternative is creating many weak points of failure by having weak passwords.
       </script>
     </section>
 
@@ -940,13 +947,17 @@
       <script type="text/template">
       # Creating Better Passwords
 
-      The master password you choose for your password manager needs to be *extra secure* as you’ll be using it access the rest of your passwords.
+      The main caveat of using a password manager is that it creates a single point of failure.<sup>1</sup>
 
-      To be considered secure, it needs to be
+      Thus, your master password must be *extra secure*, meaning it is
 
       * **Long** to resist raw brute force attacks (12 minimum, 15+ is good)
       * **Unpredictable** to resist dictionary attacks
-      * **Unrelated** to personal information to make it harder to research
+      * **Non-personal** to resist doxxing
+
+      ---
+      ###Notes
+      1. It's a worthy trade-off; the alternative is creating many weak points of failure by having bad passwords!
       </script>
     </section>
 
@@ -956,29 +967,15 @@
 
       Here are some examples you could use as a master password
 
-      * DjN2R&qAY2Nk5$u
-      * B9hN%9wpBK!ag82
-      * _Q6k52au@MFa4#a
+      * <span style="font-size:45px;">DjN2R&qAY2Nk5$u</span>
+      * <span style="font-size:45px;">B9hN%9wpBK!ag82</span>
+      * <span style="font-size:45px;">_Q6k52au@MFa4#a</span>
 
       They're 15 characters long, totally random, and don't follow patterns found in dictionaries.
 
       There's still a problem though. **They're hard to remember!**<!-- .element: class="delayed" -->
 
-      <!-- .element: class="delayed" -->**Challenge:** Take a minute and try to memorize these passwords.
-      </script>
-    </section>
-
-    <section class="slide" data-markdown>
-      <script type="text/template">
-      # Memorizing secure passwords
-
-      Try to recall the passwords on the previous slide. How many could you remember?
-
-      If you were successful, do you think you would remember them in a week from now?
-
-      <!-- .element: style="max-width:50%;float:right;padding-left:3%;margin-top:-1%" --> ![Keychain](framework/img/workshop/keychain.jpg)
-
-      Even with a password manager, you'll still have to memorize a handful of passwords for situations that can't be used with the manager.
+      Instead, let's use a method for making passwords that are secure <!-- .element: class="delayed" -->*and* memorable.
       </script>
     </section>
 
@@ -1026,15 +1023,13 @@
     <section class="slide" data-markdown>
       <script type="text/template">
       # Exercise: Creating a Passphrase
-      **3. Remove the spaces, change the capitalizations, insert some extra symbols and numbers anywhere besides at the beginning or end**
+      **3. Remove the spaces. You may also change some capitalizations or add numbers and symbols for a little extra complexity**
 
-      You may also omit some letters and change spellings
-
-      eg. agAll%onOFtiny7hiPPoshoppeD
+      eg. aGallonof%&TinyhipposhoPPed
 
       And there you have it! A secure passphrase to use as a master password.
 
-      However, **DO NOT** actually use the password from this slide for yourself. Anyone who has seen these slides knows about it and makes it unsecure.
+      **DO NOT** actually use the password from this slide for yourself. Anyone who has seen these slides knows about it and makes it unsecure.
 
       Share some of the passwords you came up with your group. Just make sure you don't end up using it for real later on!
       </script>
@@ -1044,7 +1039,7 @@
       <script type="text/template">
       # Passphrase Security
 
-      How secure is a password like **agAll%onOFtiny7hiPPoshoppeD** ?
+      How secure is a password like **aGallonof%&TinyhipposhoPPed** ?
 
       ##Is it long enough to resist raw brute force?
       A 27 character password takes up to <!-- .element: class="delayed" -->10<sup>31</sup> years to crack with raw brute force!
@@ -1060,7 +1055,8 @@
 
       ---
       ###Notes
-      * A talented hackers could figure out common linguistic patterns that might be used for passphrases and narrow their search space. It is still much better the average password though!
+      * Talented hackers could figure out common linguistic patterns that might be used for passphrases and narrow their search space. It is still much better the average password though!
+      * The best version of passphrase method uses **4-6 totally random words with no structure**. Try using this [online tool](https://www.useapassphrase.com/) for ideas
       </script>
     </section>
 
@@ -1140,7 +1136,7 @@
       <script type="text/template">
       # Changing Passwords
 
-      Conventional knowledge suggests changing passwords occasionally so passwords don’t become “stale” and vulnerable to attacks. However in practice, frequent password changes encourages people to make weaker passwords.
+      Conventional knowledge suggests changing passwords occasionally so passwords don’t become “stale” and vulnerable to attacks. However in practice, frequent password changes encourage people to make weaker passwords.
 
       Most experts now suggest to only change a password *when you are notified of a security breach*.
 
@@ -1152,15 +1148,17 @@
       <script type="text/template">
       # Multi-Factor Authentication
 
-      **Multi-Factor Authentication (MFA or 2FA)** adds an additional layer of security on top of passwords.
+      **Multi-Factor Authentication (MFA)** adds additional layers of security on top of passwords.
 
-      <!-- .element: style="width:50%;float:right;margin-left:5px" -->![Multi-Factor Authentication](framework/img/workshop/multifactor.jpg)
+      Normally, simply knowing the account name and password is all you need to sign into an account. MFA breaks the sign in process multiple parts:
 
-      Normally, simply knowing the account name and password is all you need to sign into an account. With MFA enabled, you need **both the password and a code from an additional authenticator**.
+      1. Something that you **know** (a password)
+      2. Something that you **have** (an external authenticator)
+      3. Something that you **are** (fingerprint or facial appearance)
 
-      A hacker would need to somehow discover your password and access to your authenticator to gain access to your account.
+      Enforcing a combination of these factors increases the difficulty of someone forging your identity.
 
-      <!-- .element: style="clear:both" -->Every site has different ways of enabling MFA so check their instructions for setting it up.
+      <!-- .element: style="clear:both" -->Every app has different ways of enabling MFA so check their instructions for setting it up.
       </script>
     </section>
 
@@ -1168,7 +1166,7 @@
       <script type="text/template">
       # MFA Options
 
-      Services and websites support different forms of authenticators, each varying in convenience and security. One of the most common methods is to provide a phone number that can be sent an authentication code.
+      A common form of MFA is to use a password with an authenticator. The most popular method is to provide a phone number that can be sent a code.
 
       <!-- .element: class="centered-media" --> ![Multi-Factor Authentication - Text](framework/img/workshop/mfa_text.png)
 
@@ -1176,7 +1174,7 @@
 
       ---
       ###Further Reading
-      * <sup>1</sup>These are known as SIM Port hacks. Read about them [here](https://medium.com/coinmonks/the-most-expensive-lesson-of-my-life-details-of-sim-port-hack-35de11517124)
+      1. These are known as SIM Port hacks. Read about them [here](https://medium.com/coinmonks/the-most-expensive-lesson-of-my-life-details-of-sim-port-hack-35de11517124)
       </script>
     </section>
 
@@ -1184,28 +1182,28 @@
       <script type="text/template">
       # MFA Options
 
-      <!-- .element: style="max-width:20%;float:right;padding-left:2%" --> ![Google Authenticator](framework/img/workshop/google-2fa.jpg)
-
       Authenticator apps like LastPass Authenticator and Google Authenticator provide a nice balance between convenience and security.
 
-      If supported, the most secure option is to use a physical authenticator key like the YubiKey (https://www.yubico.com/).
+      <!-- .element: class="centered-media" --> ![Google Authenticator](framework/img/workshop/google-2fa.jpg)
 
-      <!-- .element: style="max-width:40%"-->![Yubikey](framework/img/workshop/yubikey.png)
+      If supported, hardware authenticators like the [YubiKey](https://www.yubico.com/) offer excellent security.
+
+      <!-- .element: class="centered-media" -->![Yubikey](framework/img/workshop/yubikey.png)
       </script>
     </section>
 
     <section class="slide" data-markdown data-toc>
       <script type="text/template">
-      # Recovery/Security Questions
+      # Security Questions
 
-      Recovery questions are especially vulnerable to **doxxing**. A hacker do some research to find the information you use for your recovery questions such as:
+      Security questions, sometimes called recovery questions, are especially vulnerable to **doxxing**. Information can be found for common questions such as:
 
       * Childhood friends
-      * Mother's Maiden name
+      * Mother's maiden name
       * Hobbies and interests
-      * Past Vacations
+      * Past vacations
 
-      Some websites still require recovery questions. The recommendation is to use unrelated, but memorable terms. You may also use a password manager to keep a secure note of the terms being used for recovery.
+      Some websites still require security questions. The recommendation is to use unrelated, but memorable terms. You can use a password manager to treat these answers as additional passwords. Most managers also have the ability save secure notes.
       </script>
     </section>
 
@@ -1297,7 +1295,11 @@
 
       If you doubted these examples, that's great!
 
-      However, do you think you would have noticed them if they weren't a part of a security course? Hackers only need you to slip up once and can catch you when you least expect it.
+      However, do you think you would have noticed them if they weren't a part of a security course? Hackers only need you to slip up once and can catch you when you least expect it.<sup>1</sup>
+
+      ---
+      ###Notes
+      1. Another benefit to password managers is they *always* check the domain. If you land on a fake website, your manager will say it doesn't have a password!
       </script>
     </section>
 
@@ -1305,11 +1307,11 @@
       <script type="text/template">
       # Stats
 
-      Phishing has become one of the most pervasive problems in the digital world.
+      Phishing has become one of the most pervasive issues in the digital world.
 
       As of 2019:
 
-      * The cybercrime economy has grown to **$1.5 trillion** in profits a year. That's almost the GDP of Canada in 2018!
+      * The cybercrime economy has grown to **$1.5 trillion** in profits. That's almost the GDP of Canada in 2018!
       * **76% of businesses** reported being a victim of a phishing attack in the last year
       * **60% of North Americans** say they or a close family member have been victims of a security scam or breach
       * Around **1.5 million** new phishing sites are created each month
@@ -1320,13 +1322,13 @@
       <script type="text/template">
       # Common Traits of Phishing Scams
 
-      Many phishing attempts are designed in ways to exploit people's behaviours.
+      Phishing attempts are designed in ways to exploit people's behaviours.
 
       Scams usually try to:
 
       * <!-- .element: class="delayed" -->**Create a sense of urgency** (“Suspicious activity detected on your account”)
       * <!-- .element: class="delayed" -->**Appeal to curiosity** (“You have a package waiting”, “See attached documents”)
-      * <!-- .element: class="delayed" -->**Mask themselves as legitimate source** (“Message from the Canadian Revenue Agency”)
+      * <!-- .element: class="delayed" -->**Mask themselves as a legitimate source** (“Message from the Canadian Revenue Agency”)
       * <!-- .element: class="delayed" -->**Present links to click on** (“Click here to sign in”)
       * <!-- .element: class="delayed" -->**Ask for credentials or money** (“Please send payment to this address”)
       * <!-- .element: class="delayed" -->**Make offers that seem too good to be true** (“You’ve won 1 million dollars!”)
@@ -1343,7 +1345,7 @@
       * <!-- .element: class="delayed" -->**Mimicking logos, images, and even full websites.**
       * <!-- .element: class="delayed" -->**Faking sender email addresses (aka Spoofing)**. Even internal corporate email addresses can be spoofed.
       * <!-- .element: class="delayed" -->**Imitating compositional style** in emails to make messages seem more genuine.
-      * <!-- .element: class="delayed" -->**Digitally Certified websites.** The little lock symbol can beside a website URL can mislead people into thinking it's safe.
+      * <!-- .element: class="delayed" -->**Making "secure" websites.** The little lock symbol can beside a website URL can mislead people into thinking it's safe.
 
       ##Optional Exericse: Take a Second Look<!-- .element: class="delayed" -->
 
@@ -1355,13 +1357,13 @@
       <script type="text/template">
       # Spear Phishing
 
-      Spear Phishing is a more targeted form of phishing which involves **doxxing**.
+      Spear Phishing is a more targeted form of phishing that involves **doxxing**.
 
-      The information and behaviour patterns found in doxxing is used to enhance the phishing scam. They will reference actual events, use real people’s names, and imitate behaviours to increase the feeling of authenticity.
+      The information found through doxxing is used to enhance the phishing scam. They will reference actual events, use real people’s names, and imitate behaviours to increase the feeling of authenticity.
 
-      Spear Phishing usually targets important people in organization that control finances or sensitive information.
+      Spear Phishing usually targets important people in an organization that control finances or sensitive information.
 
-      The process of using information to gain a person's trust and manipulating them to do something is also known as **Social Engineering**.
+      The process of using information to gain a person's trust and manipulate them to do something is also known as **Social Engineering**.
       </script>
     </section>
 
@@ -1380,7 +1382,7 @@
 
       <!-- .element: class="centered-media" -->![Phish Detection](framework/img/workshop/detect_phish.png)
 
-      The key spotting phishing attempts is to be wary of **calls to action**
+      The key to spotting phishing attempts is to be wary of **calls to action.**
 
       These include:
 
@@ -1389,7 +1391,7 @@
       * Entering credentials
       * Sending sensitive information
 
-      If you notice any of these signs, stop and handle these situations carefully!
+      If you notice any of these signs, stop and proceed with caution!
       </script>
     </section>
 
@@ -1404,7 +1406,7 @@
 
       ##Vague greetings, spelling mistakes, and poor grammar
 
-      * Scams often come from parts of the world where English is not the first language
+      * Scams often come from parts of the world where English is not the primary language
       * Interestingly enough, there are several reasons why some phishing attempts purposefully include spelling and grammar mistakes
 
       These are just hints. An email or website that lacks these criteria is not necessarily safe. Be skeptical before taking any actions. Better safe than sorry!
@@ -1436,13 +1438,12 @@
       <script type="text/template">
       # What to do if you think you caught a Phish
 
-      ## Don't click on any Links
+      ## Don't click on any links
       * Clicking on a link may immediately install dangerous files called **malware**. These are programs that can damage your computer or steal information.
-      * You can check the source of the email or website by right-clicking somewhere that is *not* a link and selecting **View Source**. These instructions may vary depending on your browser.
 
       ## Don’t download or open any attachments
       * Attachments in phishing scams often contain malware
-      * They will often be labeled something enticing like "Order Reciept", "Vacation Photos", or "Invoice"
+      * They will often be labeled something enticing like "Order Reciept", "Picture1.jpg", or "Invoice"
 
       </script>
     </section>
@@ -1452,11 +1453,11 @@
       # What to do if you think you caught a Phish
 
       ## Confirm with the Sender
-      * If you are not sure if the sender is real, compose a new separate email to the original source. You can also use another form of communication such as phone, text, or a chat program to confirm.
+      * If you are not sure if the sender is real, **do not reply directly to the email**. Instead, compose a new email using the sender's address from your address book. You can also use another form of communication such as phone, text, or a chat program.
 
       ## Report it to the authorities
-      * For emails or websites pretending to be an institution, forward them to the real institution.
-      * If you received a phishing attempt at your work email, forward it to your IT department.
+      * For emails or websites pretending to be an institution, forward them to the real institution's fraud/abuse address.
+      * If you received a phishing attempt to your work email, forward it to your employer's fraud address.
       * For personal emails and all other types, forward it to Canadian Anti-Fraud Centre http://www.antifraudcentre-centreantifraude.ca/index-eng.htm
 
       ## Delete the email / Avoid visiting the site again
@@ -1477,11 +1478,11 @@
       ## Contact your local police department
       * Check the department website for instructions before filing a report. Each department will vary.
 
-      ## If you entered any password or information on a bad form or site, change your credentials immediately
+      ## If you entered any sensitive information, change your credentials immediately
       * Make sure you're on the right site and update your password
 
       ## If you suspect malware has been installed, visit a computer repair technician or try using anti-malware tools
-      * Malware comes in many forms and can be difficult to fully remove. It recommended to see an expert to assist with fully cleaning your computer.
+      * Malware comes in many forms and can be difficult to fully remove. It recommended to see an expert to assist you with fully cleaning your computer.
       </script>
     </section>
 
@@ -1511,10 +1512,10 @@
       <script type="text/template">
       # What is Privacy?
 
-      From funny Instagram posts to vacation photos to group conversations, we are all constantly sharing stuff with each other over the Internet.
+      From funny Instagram posts, to vacation photos, to group conversations, we are constantly sharing stuff over the Internet.
       <!-- .element: class="centered-media" --> ![Smartphones](framework/img/workshop/smartphones.jpg)
 
-      Each shared interaction has an intended audience, but where else could it end up and who else could be looking at it?
+      Each shared interaction has an intended audience, but where else could it end up, and who else could be looking at it?
 
       Privacy deals with **how our information is handled** and **who it is shared with**.
       </script>
@@ -1524,15 +1525,17 @@
       <script type="text/template">
       # Why is Privacy Important?
 
-      Most people agree that privacy is important to have, but it's worth exploring exactly *why* with some thought experiments.
+      Most people agree that privacy is important to have, but it's worth exploring exactly *why*.
 
-      ##Do you have anything worth keeping to yourself?
+      Consider the following
+
+      ##Do you have anything to hide?
 
       Have you heard something like this before?
 
       ```"If you have nothing to hide, you have nothing to fear"```
 
-      The suggestion is that only people who are up to no good would want to hide their online activity.
+      The implication is that only people who are up to no good would want to hide their online activity.
 
       What is your own stance?
       </script>
@@ -1540,18 +1543,18 @@
 
     <section class="slide" data-markdown>
       <script type="text/template">
-      # Do you have anything worth keeping to yourself?
+      # Do you have anything to hide?
 
-      This rhetoric is **dangerous**.
+      This rhetoric is **dishonest**.
 
-      This stance is often used to justify open access to our information and even intrusive surveillance programs.
+      This stance is used to justify open access to our information and even intrusive surveillance programs.
 
-      *Everyone* has information and interactions they would rather keep private.
+      *Everyone* has something they would rather keep private.
 
       * Personal information
       * Medical records
-      * Private conversations and photos with friends and family
-      * Patterns of behaviour (shopping habits, search history)
+      * Private conversations and photos
+      * Search history
 
       We also saw that benign information can be used against us in password cracking and phishing attempts.
       </script>
@@ -1566,7 +1569,7 @@
 
         <!-- .element: class="centered-media" --> ![Selling Data](framework/img/workshop/selling_data.png)
 
-        Most “free” services make money off selling your personal information, photos, and behaviour patterns to advertisers and other companies.
+        Most “free” services make money by leveraging your personal information, photos, and behaviour patterns by offering ad targeting to other companies.
         </script>
       </section>
 
@@ -1574,11 +1577,11 @@
       <script type="text/template">
       # How is your data being used?
 
-      There have been many scandals involving data being sold without user consent or used for unintended purposes.
+      Companies are regularly found to be collecting more data than they need and misusing it without user consent.
 
-      Companies may pay fines and make apologies, but these give little solace to the people whose privacy was violated.
+      Fines may be paid, but these pale in comparison to the value they extract from the violation of your privacy.
 
-      There is now also precedent for data to be used in legal cases. The smart home device Alexa, which passively records parts of conversations, was subpoenaed in 2018 for a murder trial.
+      There is now precedent for data to be used as evidence in court procedings. The smart home device Alexa, which passively records parts of conversations, was subpoenaed in 2018 for a murder trial.
 
       ---
       ###Further Reading
@@ -1592,6 +1595,10 @@
       <script type="text/template">
       # How is your data being used?
       <!-- .element: class="centered-media" --> ![Reading the Terms of Service](framework/img/workshop/reading_tos.jpg)
+
+      ---
+      ###Resource
+      * Image credit [System32 Comics](https://www.instagram.com/p/BzGZOWRg6Rd/)
       </script>
     </section>
 
@@ -1601,9 +1608,9 @@
 
       Going through a website’s terms of service and privacy policies to find out what you're signing up for can be daunting, especially when they are long and full of legalese.
 
-      Fortunately, **Terms of Service; Didn’t Read** is an online project that aims to summarize the policies of major websites in a more digestible format.
+      Fortunately, **Terms of Service; Didn’t Read** is an online project that aims to summarize the policies of major websites into a more digestible format.
 
-      With your group, visit **https://tosdr.org/** to have a look at some of your frequently used websites and services.
+      With your group, visit **https://tosdr.org/** to have a look at some of your favourite used websites.
 
       Pick one site and discuss the specific policies with your group
 
@@ -1632,7 +1639,7 @@
       <script type="text/template">
       # Optional Exercise: Is your data being protected?
 
-      Even if you are ok with your data being bought and sold, you cannot be sure where else it could end up.
+      Even if you are ok with your data being bought and sold, you cannot be sure where else it might end up.
 
       Using a search engine, look up any financial institution, social media network, or service that you’ve signed up for and add the following terms:
 
@@ -1641,9 +1648,11 @@
       * security flaw
       * hacked
 
-      Eg. “BMO data breach”, “WhatsApp hacked”, “Netflix security flaw”. What do you find?
+      Eg. “BMO data breach”, “WhatsApp hacked”, “Netflix security flaw”.
 
-      Once the data is out, there is no telling who can access it what can be done with it.
+      What do you find?
+
+      Once the data is exposed, you cannot control who can look at it or what is done with it.
       </script>
     </section>
 
@@ -1651,20 +1660,20 @@
       <script type="text/template">
       # Optional Exercise: Have you already been pwned?
 
-      Data breaches regularly expose lists of passwords for websites and services.
+      Data breaches regularly expose lists of passwords for websites.
 
-      Check if your accounts registered to an email have been exposed in a data breach by visiting the following website
+      Check if any of your accoutns may have been compromised by visiting the following website
 
       https://haveibeenpwned.com/
 
       The website checks if your email can be found in any of the major data breaches.
 
-      It also has a listing for which sites have been breached and the type of data leaked: https://haveibeenpwned.com/PwnedWebsites
+      It also has a listing for sites that have been breached and the type of data leaked: https://haveibeenpwned.com/PwnedWebsites
 
       ---
       ###Notes
-      * If you find that your account has been involved in a breach, it doesn't necessarily mean someone has broken into your account; a hacker usually still has to run a password cracking attempt.
-      * It's good practice to change your password if you haven't since the last breach
+      * If you find that your account has been involved in a breach, it doesn't necessarily mean that someone has broken into your account; a hacker usually still has to run a password cracking attempt.
+      * It's good practice to change your password if you haven't since the last breach.
       </script>
     </section>
 
@@ -1673,7 +1682,7 @@
       # Is your data being kept safe? Who else is accessing it?
         There's concern over what we want to keep private, but what about information we choose to make public on social media?
 
-        We've already seen that **doxxing** and **social engineering** hinge on the availability of information. Seemingly harmless data can enhance password dictionary attacks and phishing attempts.
+        We've already seen that **doxxing** and **social engineering** rely on the availability of information. Seemingly harmless data can enhance password dictionary attacks and phishing attempts.
 
       </script>
     </section>
@@ -1683,10 +1692,10 @@
         # Is your data being kept safe? Who else is accessing it?
         Bad people are always finding new ways to use public information
 
-        * **Geotagged** posts reveal people's current locations, allowing burglars to target homes when people are away on vacation
-        * People have had their lives ruined by false accusations created from otherwise innocent social media posts
-        * Fake bomb threats or cases of domestic abuse can be called on people's houses with addresses found online (aka SWATting)
-        * Doxxing is commonly done to expose information to a wider audience, inviting extortion, coercion, and defamation
+        * **Geotagged** posts reveal your location, allowing burglars to target your home when you are away on vacation
+        * Your posts can be taken out of context to perform character assassinations
+        * Someone can be call a fake bomb threat or domestic abuse hoax with an address found online (aka SWATting)
+        * Doxxing can facilitate targeted online harassment campaigns
 
         ---
         ###Further Reading
@@ -1710,8 +1719,9 @@
       2. Based on the results that match you, scan the pages for more information like interests, social media nicknames, and places of work. Add these search terms to your name.
 
         * **“Harry Potter quidditch”**
+        * **“Harry Potter Linkedin”**
         * **“Harry Potter Hogwarts”**
-        * **“@hpotter”**
+        * **“hpotter instagram”**
         * **"Harry Potter" + “The Boy Who Lived”**
 
       3. Repeat the process by adding any possible leads that come up
@@ -1730,7 +1740,7 @@
 
       Anyone who can access a search engine on the Internet can also access this information. There are sophisticated methods and tools available that can turn up even more details.
 
-      Large social media companies like Facebook have even constructed **shadow profiles** for people who don’t even use their platform. Data that other users upload is combined with publicly available information to infer details about non-users.
+      Large social media companies like Facebook have even constructed **shadow profiles** for people who don’t use their platform. Data that other users upload is combined with publicly available information to infer details about non-users.
 
       ---
       ###Further Reading
@@ -1742,7 +1752,7 @@
       <script type="text/template">
       # Reducing your digital footprint
 
-      We don’t have to be afraid to use the Internet. However there are some precautions that can keep you safer.
+      We don’t have to be afraid to use the Internet. However, there are some precautions that can keep you safer.
 
       ##Think twice before signing up##
 
@@ -1750,8 +1760,8 @@
 
       ##Tighten your share settings and permissions
 
-      * Most websites and services give options to adjust what information you make public and what information is collected. These options are usually found in the Settings, Preferences, or Profile of the app
-      * If you are unsure, search for the service name and “privacy settings” on a search engine
+      * Most websites give options to adjust what information you make public and what information is collected. These options are usually found in the Settings, Preferences, or Profile of the app.
+      * If you are unsure, search for the name of the website and “privacy settings” on a search engine.
       </script>
     </section>
 
@@ -1761,16 +1771,20 @@
 
       ##Think before you post
 
-      * "Anything you say can and will be used against you"
-      * Be aware of who can view your public posts or photos. Deleting content after the fact doesn’t guarantee it is fully removed (though it can help).
+      * *"Anything you say can and will be used against you"*
+      * Be aware of who can view your public posts or photos. Deleting content after the fact doesn’t guarantee it is fully removed<sup>1</sup>, though it can help.
 
       ##Delete old accounts you don’t use anymore
 
-      * Getting rid of unused accounts reduces the number of places your information could be searched or exposed
+      * Getting rid of unused accounts reduces the number of places your information could be searched or exposed.
 
       ##Use alternate emails for different services
 
-      * Using multiple email accounts for different groups of services can make it more difficult to pinpoint information back to you after a data leak. A password manager is helpful in managing these accounts.
+      * Using multiple email accounts for different groups of services can make it more difficult to attribute information back to you after a data leak. A password manager is helpful in managing these accounts.
+
+      ---
+      ###Notes
+      1. There are websites that take automatically snapshots of public social media and archive them.
       </script>
     </section>
 
@@ -1800,7 +1814,7 @@
             <td>
               DuckDuckGo - <a href="https://duckduckgo.com/">https://duckduckgo.com/</a>
               <br>
-              Qwant - <a href="https://www.qwant.com/">https://www.qwant.com/</a>
+              StartPage - <a href="https://www.startpage.com/">https://www.startpage.com/</a>
             </td>
           </tr>
           <tr>
@@ -1808,9 +1822,9 @@
               Gmail
             </td>
             <td>
-              ProtonMail - <a href="https://protonmail.com/">https://protonmail.com/</a>
-              <br>
               FastMail - <a href="https://www.fastmail.com/">https://www.fastmail.com/</a>
+              <br>
+              ProtonMail - <a href="https://protonmail.com/">https://protonmail.com/</a>
             </td>
           </tr>
           <tr>
@@ -1828,7 +1842,7 @@
                FB Messenger (Chat)
             </td>
             <td>
-              Signal <a href ="https://signal.org/">https://signal.org/</a>)
+              Signal <a href ="https://signal.org/">https://signal.org/</a>
               <br>
               Telegram <a href ="https://telegram.org/">https://signal.org/</a>
             </td>
@@ -1851,7 +1865,7 @@
 
       ##Install an Ad Blocker in your browser
       * Ads are not only annoying, but they also track your behaviour on websites.
-      * Try uBlock Origin and Adblock Plus (search for these exact terms as there are many fakes). Ad blockers also have the extra benefits of improving website speed and reducing data usage.
+      * Try uBlock Origin and Adblock Plus (search for these exact terms as there are many fakes). Ad blockers have the extra benefits of improving website speed and reducing data usage.
 
       ##Use Private Browsing or Incognito Mode
       * Most browsers have a private or incognito mode, which reduces the amount of tracking that can be done. Private Browsing doesn’t prevent all tracking and if you’re signed into an account, your activity on that website can still be monitored.
@@ -1878,13 +1892,11 @@
       <script type="text/template">
       # Wrapping Up
 
-      It may seem like the Internet is a scary place with hackers trying to steal your information and companies outright buying and selling it.
+      Cars cause accidents and create pollution. However, it doesn’t mean we should be afraid of driving. Cars have given us a freedom of movement we didn't have before and have changed our lives for the better.
 
-      However, we must remember that this technology has had an immensely positive impact on our lives.
+      In a similar way, the Internet seems like a scary place with hackers trying to steal your information and companies outright buying and selling it.
 
-      Cars cause accidents and create pollution, but that doesn’t mean we should be afraid of driving. Cars have given us a freedom of movement we didn't have before.
-
-      Just remember to check your mirrors, buckle up, and enjoy the ride.
+      Just like you would wear a seatbelt in a car, taking the right precautions keeps you safe while enjoying the our connected digital world.
       </script>
     </section>
 
