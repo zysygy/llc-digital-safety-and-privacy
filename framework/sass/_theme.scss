@@ -17,6 +17,7 @@ html {
     font-size: 70%;
   }
 }
+
 body {
   padding: 0;
   margin: 0;
@@ -746,4 +747,14 @@ code {
   p {
     margin-top: 0;
   }
+}
+
+/* Digital Safety and Privacy Specific
+   Added by AC
+*/
+
+.centered-icon {
+  display:inline-block;
+  width:88px;
+  margin: 20px 10px 0px;
 }
