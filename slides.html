@@ -38,7 +38,7 @@
               <li>open <em>slides.html</em> in the browser to view the slides</li>
             </ul>
           </li>
-          <li>LastPass: <a href="https://www.lastpass.com/">https://www.lastpass.com/</a></li>
+          <li>Create an account on LastPass : <a href="https://www.lastpass.com/">https://www.lastpass.com/</a></li>
           <li>Any Web Browser - FireFox is recommended: <a href="https://www.mozilla.org/en-CA/firefox/">https://www.mozilla.org/en-CA/firefox/</a></li>
           </li>
         </ol>
@@ -73,7 +73,6 @@
         <p class="right">Use the left <span class="arrow">&#8592;</span> and right <span class="arrow">&#8594;</span> arrow keys to navigate</p>
       </footer>
     </section>
-
 
     <section class="slide" data-markdown>
       <script type="text/template">
@@ -179,11 +178,27 @@
       </script>
     </section>
 
+    <section class="slide" data-markdown>
+      <script type="text/template">
+      # Security and Privacy VS Convenience
 
+      We must accept that there are always trade-offs between **safety** and **covenience**.
+
+      <div style="text-align:center;">
+        <img class="centered-media" style="max-width:600px;" src="framework/img/workshop/vault.jpg" alt="Bank Vault">
+        <img class="centered-media" style="max-width:600px;" src="framework/img/workshop/key_under_doormat.png" alt="Key under doormat">
+      </div>
+
+      A little effort can go a long way, and the best strategy is one you'll actually follow.
+
+      ![Trade Off](framework/img/workshop/trade_off.png)<!-- .element: style="display:block;margin:auto;max-width:6%;" -->
+
+      </script>
+    </section>
 
     <section class="slide" data-markdown>
       <script type="text/template">
-      # Why Hackers Hack and Types of Hackers
+      # Why Hackers Hack: Types of Hackers
 
       **White Hat** hackers are hired by organizations to find weakenesses in their systems and help them improve security.
 
@@ -192,20 +207,6 @@
       **Black Hats** are focused on stealing credentials and causing you harm. They are sometimes supported by large criminal organizations or even nation states.
 
       It's important to realize that Black Hats treat hacking as their **job**. They'll use any method possible to achieve their goals and try to constantly improve their techniques.
-      </script>
-    </section>
-
-    <section class="slide" data-markdown>
-      <script type="text/template">
-      # Security and Privacy VS Convenience
-
-      We must accept that there are always **trade-offs between security and covenience**.
-
-      A little effort can go a long way, and the best strategy is one you'll actually follow.
-
-      This workshop will highlight online threats, provide options to protect against them, and describe the trade-offs so you can decide which ones are right for you.
-
-      ![Trade Off](framework/img/workshop/trade_off.png)<!-- .element: style="display:block;margin:auto;max-width:6%;" -->
       </script>
     </section>
 
@@ -371,7 +372,7 @@
 
       > Visit https://www.roboform.com/how-secure-is-my-password
 
-      **As a rule, don't type any real passwords into sites you don't trust.**
+      **As a rule, don't type any real passwords into sites you don't trust.** More on this in the Phishing section of the workshop.
 
       How strong is your password?
 
@@ -404,7 +405,7 @@
       <script type="text/template">
       ##  "Through 20 years of effort, we've successfully trained everyone to use passwords that are hard for humans to remember, but easy for computers to guess."
 
-      ## -Randall Munroe
+      ## -Randall Munroe (XKCD)
       </script>
     </section>
 
@@ -688,7 +689,7 @@
           The last column is the <strong>maximum time</strong> it would take to crack a password. On average, it would take about half as much time and even less with more advanced logic.
         </li>
         <li>
-          The password processing method used in our calculations is called <strong>SHA-1</strong>, which was widely used by organizations such as LinkedIn. Here's an <a href="https://brilliant.org/wiki/secure-hashing-algorithms/">article</a> about SHA-1 and hashing.
+          The password processing method used in our calculations is called <strong>SHA-1</strong>, which was widely used including by organizations such as LinkedIn. Here's an <a href="https://brilliant.org/wiki/secure-hashing-algorithms/">article</a> about SHA-1 and hashing.
         </li>
         <li>
           Some websites will rate limit the number of tries you can make, but not all do. Hackers also commonly bypass this safeguard using an <strong>offline attack</strong>, which is performed against leaked password hashes, not the actual website.
@@ -917,7 +918,7 @@
 
       ---
       ###Notes
-      1. The secure storage is protected by [**Encryption**](https://slate.com/technology/2015/02/what-is-encryption-a-nontechnical-guide-to-protecting-your-digital-communications.html)
+      1. The secure storage is protected by [encryption](https://slate.com/technology/2015/02/what-is-encryption-a-nontechnical-guide-to-protecting-your-digital-communications.html), which is a way to keep information secure.
       2. You should change your imported passwords if they're not strong
       3. [Image Credit](https://pixelprivacy.com/password-managers/)
       </script>
@@ -1047,7 +1048,7 @@
       # Exercise: Creating a Passphrase
       **3. Remove the spaces. You may also change some capitalizations or add numbers and symbols for a little extra complexity**
 
-      eg. aGallonof%&TinyhipposhoPPed
+      eg. aGallonof%&Tinyhipposhopped
 
       And there you have it! A secure passphrase to use as a master password.
 
@@ -1061,7 +1062,7 @@
       <script type="text/template">
       # Passphrase Security
 
-      How secure is a password like **aGallonof%&TinyhipposhoPPed** ?
+      How secure is a password like **aGallonof%&Tinyhipposhopped** ?
 
       ##Is it long enough to resist raw brute force?
       A 27 character password takes up to <!-- .element: class="delayed" -->10<sup>31</sup> years to crack with raw brute force!
@@ -1136,7 +1137,7 @@
 
       ##Acronym Strategy
 
-      Think of a song lyric, poem, religious verse, or nursery rhyme that you know well.
+      1\. Think of a song lyric, poem, religious verse, or nursery rhyme that you know well.
 
       >With glowing hearts, we see thee rise.
 
@@ -1148,11 +1149,15 @@
 
       > We stand on guard for thee
 
-      Take the first letter of each word and then add some variations on the capitalizations, numbers, and symbols
+      2\. Take the first letter of each word and combine them
 
-      eg. Wg!HwstrTTNsAF15FFawocwsoG#ft7
+      >**W**ith **g**lowing **h**earts, **w**e **s**ee **t**hee **r**ise. -> **Wghwstr**
 
-      This method creates memorable passwords, but be careful not to choose a phrase or subject that you use a lot publicly.
+      3\. Add some variations on the capitalizations, numbers, and symbols
+
+      **Wg!HwstrTTNsAF15FFawocwsoG#ft7**
+
+      Be careful not to choose a phrase or subject that you use a lot publicly.
       </script>
     </section>
 
@@ -1200,7 +1205,7 @@
 
       ---
       ###Further Reading
-      1. Read about a specialized SMS attack [here](https://medium.com/coinmonks/the-most-expensive-lesson-of-my-life-details-of-sim-port-hack-35de11517124). It's quite rare though and most people shouldn't be worried.
+      1. Read about specialized SMS attacks [here](https://medium.com/coinmonks/the-most-expensive-lesson-of-my-life-details-of-sim-port-hack-35de11517124).
       2. Learn about other MFA options [here](https://www.inap.com/blog/mutifactor-works/).
       </script>
     </section>
@@ -1333,9 +1338,7 @@
 
       However, do you think you would have noticed them if they weren't a part of a security course? Hackers only need you to slip up once and can catch you when you least expect it.<sup>1</sup>
 
-      ---
-      ###Notes
-      1. Another benefit to password managers is they *always* check the domain. If you land on a fake website, your manager will say it doesn't have a password!
+      Another benefit to password managers is they *always* check for a valid domain. If you land on a fake website with a bad URL, your manager will say it doesn't have a password!
       </script>
     </section>
 
@@ -1351,6 +1354,10 @@
       * **76% of businesses** reported being a victim of a phishing attack in the last year
       * **60% of North Americans** say they or a close family member have been victims of a security scam or breach
       * Around **1.5 million** new phishing sites are created each month
+
+      ---
+      ###Further Reading
+      * [80 Eye-Opening Cyber Security Statistics for 2019](https://www.thesslstore.com/blog/80-eye-opening-cyber-security-statistics-for-2019/)
       </script>
     </section>
 
